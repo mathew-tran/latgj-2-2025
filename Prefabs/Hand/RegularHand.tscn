@@ -45,30 +45,6 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_4vfvc"]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Area2D:monitorable")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mmlbq"]
 _data = {
@@ -77,7 +53,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2pnyf"]
-size = Vector2(34.1698, 77.9075)
+size = Vector2(98, 77.9075)
 
 [node name="LeftHand" type="Sprite2D"]
 texture = ExtResource("1_fd5p5")
@@ -89,9 +65,9 @@ libraries = {
 }
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(162.361, -0.249359)
 collision_layer = 2
+monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(7.08488, -0.866013)
+position = Vector2(11, -0.866013)
 shape = SubResource("RectangleShape2D_2pnyf")

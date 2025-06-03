@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://b1ogo8a5bckpl"]
+
+[ext_resource type="Texture2D" uid="uid://bwkj5dvs63i84" path="res://Art/Enemy/Spikey.png" id="1_dnru3"]
+[ext_resource type="Script" uid="uid://iyni07i4mwid" path="res://Scripts/Enemy.gd" id="1_w3icy"]
+[ext_resource type="Script" uid="uid://wfet8n3t44uv" path="res://Scripts/HealthComponent.gd" id="2_dvw5c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h175a"]
+radius = 69.0072
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dvw5c"]
+radius = 65.0692
+
+[node name="Spikey" type="CharacterBody2D"]
+script = ExtResource("1_w3icy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dnru3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 0)
+shape = SubResource("CircleShape2D_h175a")
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("2_dvw5c")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(8, 1)
+shape = SubResource("CircleShape2D_dvw5c")
+
+[connection signal="OnDeath" from="HealthComponent" to="." method="_on_health_component_on_death"]
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
