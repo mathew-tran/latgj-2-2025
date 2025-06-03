@@ -8,7 +8,8 @@ var Damage = 0
 
 enum ATTACK {
 	JAB,
-	STRAIGHT
+	STRAIGHT,
+	BLOCK
 }
 
 var Knockback = 100
@@ -23,6 +24,8 @@ func Use(attack : ATTACK, speed = 1.0, damage = 2, knockback = 600):
 			$AnimationPlayer.play("attack")
 		ATTACK.STRAIGHT:
 			$AnimationPlayer.play("straight")
+		ATTACK.BLOCK:
+			$AnimationPlayer.play("defend")
 	await $AnimationPlayer.animation_finished
 	Complete.emit()
 	

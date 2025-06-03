@@ -59,6 +59,7 @@ shape = SubResource("CircleShape2D_h175a")
 
 [node name="HealthComponent" type="Node" parent="."]
 script = ExtResource("2_dvw5c")
+MaxHealth = 3
 
 [node name="Hitbox" type="Area2D" parent="."]
 collision_mask = 2

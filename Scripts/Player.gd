@@ -22,8 +22,6 @@ func SetIdle():
 func _process(delta: float) -> void:
 	velocity *= .88
 	move_and_slide()
-	if IsAttacking():
-		return
 	look_at(get_global_mouse_position())
 	
 	var moveVector = Vector2.ZERO
@@ -43,7 +41,10 @@ func _process(delta: float) -> void:
 	
 	var bCommandAdded = false
 	if IsAttacking() == false:
-		if Input.is_action_just_released("Left_Punch") and Input.is_action_just_released("Right_Punch"):
+		if Input.is_action_just_released("Block"):
+			CommandList += "B"	
+			bCommandAdded = true
+		elif Input.is_action_just_released("Left_Punch") and Input.is_action_just_released("Right_Punch"):
 			CommandList += "L+R"
 			bCommandAdded = true
 		elif Input.is_action_just_released("Left_Punch"):
@@ -64,12 +65,20 @@ func IsAttacking():
 func UseLeft(attack = Fist.ATTACK.JAB, speed = 1, damage = 2, knockback = 100):
 	SetAttacking()
 	$LeftHand/Fist1.Use(attack, speed, damage, knockback)
+	$Timer.paused = true
+	$Timer.start()
 	await $LeftHand/Fist1.Complete
+	$Timer.paused = false
+	
 	
 func UseRight(attack = Fist.ATTACK.JAB, speed = 1, damage = 2, knockback = 100):
 	SetAttacking()
+	$Timer.paused = true
+	$Timer.start()
+	
 	$RightHand/Fist2.Use(attack, speed, damage, knockback)
 	await $RightHand/Fist2.Complete
+	$Timer.paused = false
 	
 func ExecuteCommand():
 	if IsAttacking():
@@ -79,7 +88,17 @@ func ExecuteCommand():
 		UseLeft()
 		await UseRight()
 		SetIdle()		
-		
+	elif CommandList == "LLL":
+		await UseLeft(Fist.ATTACK.JAB, 2)
+		await UseLeft(Fist.ATTACK.STRAIGHT, 2)
+		await UseLeft(Fist.ATTACK.JAB, 2)
+		SetIdle()
+	elif CommandList == "RRR":
+		await UseRight(Fist.ATTACK.STRAIGHT, 2)
+		await UseRight(Fist.ATTACK.STRAIGHT, 3)
+		velocity += Vector2.RIGHT.rotated(rotation) * 1500
+		await UseRight(Fist.ATTACK.STRAIGHT, 1, 4)
+		SetIdle()
 	elif CommandList == "LLR":
 		velocity += Vector2.RIGHT.rotated(rotation) * 1500
 		await UseRight(Fist.ATTACK.STRAIGHT, 2, 5, 4000)
@@ -88,7 +107,56 @@ func ExecuteCommand():
 		await UseLeft(Fist.ATTACK.JAB, 3, 1)
 		await UseRight(Fist.ATTACK.JAB, 3, 1)
 		SetIdle()
-		
+	elif CommandList == "LRLRLR":
+		await UseLeft(Fist.ATTACK.JAB, 3, 1)
+		await UseRight(Fist.ATTACK.JAB, 3, 1)
+		var tween = get_tree().create_tween()
+		tween.tween_property(self, "rotation_degrees", rotation_degrees + 360, .2)
+		await tween.finished
+		await UseLeft(Fist.ATTACK.JAB, 5, 1)
+		await UseRight(Fist.ATTACK.JAB, 5, 1)
+		await UseLeft(Fist.ATTACK.JAB, 5, 1)
+		await UseLeft(Fist.ATTACK.JAB, 5, 1)
+		await UseRight(Fist.ATTACK.JAB, 5, 1)
+		await UseLeft(Fist.ATTACK.JAB, 5, 1)
+		await UseLeft(Fist.ATTACK.JAB, 5, 1)
+		await UseRight(Fist.ATTACK.JAB, 5, 1)
+		await UseLeft(Fist.ATTACK.JAB, 5, 1)
+		SetIdle()
+	elif CommandList == "LLLLLR":
+		await UseLeft(Fist.ATTACK.STRAIGHT, 1, 1)
+		velocity += Vector2.RIGHT.rotated(rotation) * 800
+		await UseRight(Fist.ATTACK.JAB, 5, 1)
+		await UseLeft(Fist.ATTACK.STRAIGHT, 1, 1)
+		velocity += Vector2.RIGHT.rotated(rotation) * 800
+		await UseRight(Fist.ATTACK.JAB, 5, 1)
+		await UseLeft(Fist.ATTACK.STRAIGHT, 1, 1)
+		velocity += Vector2.RIGHT.rotated(rotation) * 800
+		await UseRight(Fist.ATTACK.JAB, 5, 1)
+		await UseLeft(Fist.ATTACK.STRAIGHT, 1, 1)
+		velocity += Vector2.RIGHT.rotated(rotation) * 800
+		await UseRight(Fist.ATTACK.JAB, 5, 1)
+		await UseLeft(Fist.ATTACK.STRAIGHT, 1, 1)
+		velocity += Vector2.RIGHT.rotated(rotation) * 800
+		await UseRight(Fist.ATTACK.JAB, 5, 1)
+		SetIdle()
+	elif CommandList == "LLRRB":
+		await UseLeft(Fist.ATTACK.JAB, 5, 1, 800)
+		UseRight(Fist.ATTACK.JAB, 5, 1, 800)
+		velocity += Vector2.RIGHT.rotated(rotation) * 800
+		await UseLeft(Fist.ATTACK.JAB, 5, 1, 800)
+		UseRight(Fist.ATTACK.JAB, 5, 1, 800)
+		velocity += Vector2.RIGHT.rotated(rotation) * 800
+		await UseLeft(Fist.ATTACK.JAB, 5, 1, 800)
+		UseRight(Fist.ATTACK.JAB, 5, 1, 800)
+		velocity += Vector2.RIGHT.rotated(rotation) * 800
+		SetIdle()
+	elif CommandList == "BLLL":
+		for x in range(0, 3):
+			velocity += Vector2.RIGHT.rotated(rotation) * 800
+			await UseLeft(Fist.ATTACK.JAB, 2)
+			await UseRight(Fist.ATTACK.JAB, 2)
+		SetIdle()
 	elif CommandList == "LLL+R":
 		var tween = get_tree().create_tween()
 		tween.tween_property(self, "rotation_degrees", rotation_degrees + 360, .5)
@@ -114,15 +182,35 @@ func ExecuteCommand():
 		UseLeft()
 		await UseRight()
 		SetIdle()
-		
+	elif CommandList == "BR":
+		velocity += Vector2.RIGHT.rotated(rotation) * 100
+		await UseRight(Fist.ATTACK.STRAIGHT, 2, 3, 2000)
+		SetIdle()
+	elif CommandList == "BL":
+		velocity += Vector2.RIGHT.rotated(rotation) * 100
+		await UseLeft(Fist.ATTACK.STRAIGHT, 2, 3, 2000)
+		SetIdle()
+	elif CommandList.ends_with("BBB"):
+		velocity -= Vector2.RIGHT.rotated(rotation) * 1500
+		UseRight(Fist.ATTACK.BLOCK)
+		await UseLeft(Fist.ATTACK.BLOCK)
+		SetIdle()
+	elif CommandList.ends_with("BB"):
+		velocity -= Vector2.RIGHT.rotated(rotation) * 1000
+		UseRight(Fist.ATTACK.BLOCK)
+		await UseLeft(Fist.ATTACK.BLOCK)
+		SetIdle()
 	elif CommandList.ends_with("R"):
 		await UseRight()
 		SetIdle()
 	elif CommandList.ends_with("L"):
 		await UseLeft()
 		SetIdle()
-	
-	if CommandList.length() > 10:
+	elif CommandList.ends_with("B"):
+		UseRight(Fist.ATTACK.BLOCK)
+		await UseLeft(Fist.ATTACK.BLOCK)
+		SetIdle()
+	if CommandList.length() > 5:
 		ClearCommand()
 
 func ClearCommand():

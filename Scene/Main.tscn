@@ -17,5 +17,23 @@ position = Vector2(-28, -116)
 [node name="Spikey3" parent="." instance=ExtResource("2_djkur")]
 position = Vector2(-59, 141)
 
+[node name="Spikey4" parent="." instance=ExtResource("2_djkur")]
+position = Vector2(683, -259)
+
+[node name="Spikey5" parent="." instance=ExtResource("2_djkur")]
+position = Vector2(496, 227)
+
+[node name="Spikey6" parent="." instance=ExtResource("2_djkur")]
+position = Vector2(-437, -389)
+
+[node name="Spikey7" parent="." instance=ExtResource("2_djkur")]
+position = Vector2(-610, 220)
+
+[node name="Spikey8" parent="." instance=ExtResource("2_djkur")]
+position = Vector2(471, -99)
+
+[node name="Spikey9" parent="." instance=ExtResource("2_djkur")]
+position = Vector2(191, -346)
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_xhtwi")]
 position = Vector2(-341, -18)
