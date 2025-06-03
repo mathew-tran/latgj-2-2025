@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbrr2wswji1br"]
+
+[ext_resource type="Texture2D" uid="uid://dajfvqi5rswl" path="res://Art/Field/Playfield.png" id="1_g6ejq"]
+[ext_resource type="PackedScene" uid="uid://ckwjpw38i8rea" path="res://Prefabs/Player.tscn" id="1_xhtwi"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g6ejq")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_xhtwi")]
+position = Vector2(-341, -18)

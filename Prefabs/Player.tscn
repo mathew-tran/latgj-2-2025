@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckwjpw38i8rea"]
+
+[ext_resource type="Texture2D" uid="uid://cp1scwing4rtl" path="res://Art/Character/Player.png" id="1_um8lo"]
+[ext_resource type="Script" uid="uid://cfeil3j8bfer1" path="res://Scripts/Player.gd" id="1_x3d5u"]
+[ext_resource type="PackedScene" uid="uid://dlmm8nmlufcou" path="res://Prefabs/Hand/RegularHand.tscn" id="3_b43ah"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_x3d5u")
+
+[node name="Head" type="Sprite2D" parent="."]
+texture = ExtResource("1_um8lo")
+
+[node name="LeftHand" type="Node2D" parent="."]
+
+[node name="Fist1" parent="LeftHand" instance=ExtResource("3_b43ah")]
+position = Vector2(21, -97)
+
+[node name="RightHand" type="Node2D" parent="."]
+position = Vector2(19, 93)
+scale = Vector2(1, -1)
+
+[node name="Fist2" parent="RightHand" instance=ExtResource("3_b43ah")]
+
+[node name="Camera2D" type="Camera2D" parent="."]

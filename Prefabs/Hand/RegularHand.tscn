@@ -1,0 +1,97 @@
+[gd_scene load_steps=7 format=3 uid="uid://dlmm8nmlufcou"]
+
+[ext_resource type="Texture2D" uid="uid://mur5qwu6aih5" path="res://Art/Hands/RegularGlove.png" id="1_fd5p5"]
+[ext_resource type="Script" uid="uid://cc0x2ruoppi6n" path="res://Scripts/Hand.gd" id="2_2pnyf"]
+
+[sub_resource type="Animation" id="Animation_fspfw"]
+resource_name = "attack"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(142, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.523599, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Area2D:monitorable")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.17),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_4vfvc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D:monitorable")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mmlbq"]
+_data = {
+&"RESET": SubResource("Animation_4vfvc"),
+&"attack": SubResource("Animation_fspfw")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2pnyf"]
+size = Vector2(34.1698, 77.9075)
+
+[node name="LeftHand" type="Sprite2D"]
+texture = ExtResource("1_fd5p5")
+script = ExtResource("2_2pnyf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_mmlbq")
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(162.361, -0.249359)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(7.08488, -0.866013)
+shape = SubResource("RectangleShape2D_2pnyf")
