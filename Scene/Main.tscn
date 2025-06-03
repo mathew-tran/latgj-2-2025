@@ -11,5 +11,11 @@ texture = ExtResource("1_g6ejq")
 
 [node name="Spikey" parent="." instance=ExtResource("2_djkur")]
 
+[node name="Spikey2" parent="." instance=ExtResource("2_djkur")]
+position = Vector2(-28, -116)
+
+[node name="Spikey3" parent="." instance=ExtResource("2_djkur")]
+position = Vector2(-59, 141)
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_xhtwi")]
 position = Vector2(-341, -18)

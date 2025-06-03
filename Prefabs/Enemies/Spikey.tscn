@@ -1,14 +1,51 @@
-[gd_scene load_steps=6 format=3 uid="uid://b1ogo8a5bckpl"]
+[gd_scene load_steps=9 format=3 uid="uid://b1ogo8a5bckpl"]
 
 [ext_resource type="Texture2D" uid="uid://bwkj5dvs63i84" path="res://Art/Enemy/Spikey.png" id="1_dnru3"]
 [ext_resource type="Script" uid="uid://iyni07i4mwid" path="res://Scripts/Enemy.gd" id="1_w3icy"]
-[ext_resource type="Script" uid="uid://wfet8n3t44uv" path="res://Scripts/HealthComponent.gd" id="2_dvw5c"]
+[ext_resource type="Script" uid="uid://wfet8n3t44uv" path="res://HealthComponent.gd" id="2_dvw5c"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h175a"]
 radius = 69.0072
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dvw5c"]
 radius = 65.0692
+
+[sub_resource type="Animation" id="Animation_w3icy"]
+resource_name = "hit"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1.5, 1.5, 1.5, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_bmyd0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_17342"]
+_data = {
+&"RESET": SubResource("Animation_bmyd0"),
+&"hit": SubResource("Animation_w3icy")
+}
 
 [node name="Spikey" type="CharacterBody2D"]
 script = ExtResource("1_w3icy")
@@ -30,5 +67,9 @@ collision_mask = 2
 position = Vector2(8, 1)
 shape = SubResource("CircleShape2D_dvw5c")
 
+[node name="HitAnim" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_17342")
+}
+
 [connection signal="OnDeath" from="HealthComponent" to="." method="_on_health_component_on_death"]
-[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]

@@ -3,12 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://cp1scwing4rtl" path="res://Art/Character/Player.png" id="1_um8lo"]
 [ext_resource type="Script" uid="uid://cfeil3j8bfer1" path="res://Scripts/Player.gd" id="1_x3d5u"]
 [ext_resource type="PackedScene" uid="uid://dlmm8nmlufcou" path="res://Prefabs/Hand/RegularHand.tscn" id="3_b43ah"]
-[ext_resource type="Script" uid="uid://wfet8n3t44uv" path="res://Scripts/HealthComponent.gd" id="4_shmu5"]
+[ext_resource type="Script" uid="uid://wfet8n3t44uv" path="res://HealthComponent.gd" id="4_shmu5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b43ah"]
 radius = 66.0681
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_x3d5u")
 
 [node name="Head" type="Sprite2D" parent="."]
@@ -33,3 +33,8 @@ shape = SubResource("CircleShape2D_b43ah")
 
 [node name="HealthComponent" type="Node" parent="."]
 script = ExtResource("4_shmu5")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
