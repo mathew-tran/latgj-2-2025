@@ -252,16 +252,6 @@ func ExecuteCommand():
 		velocity += Vector2.RIGHT.rotated(rotation) * 100
 		await UseLeft(Fist.ATTACK.STRAIGHT, 2, 3, 2000)
 		SetIdle()
-	elif CommandList.ends_with("BBB"):
-		velocity -= Vector2.RIGHT.rotated(rotation) * 1500
-		UseRight(Fist.ATTACK.BLOCK)
-		await UseLeft(Fist.ATTACK.BLOCK)
-		SetIdle()
-	elif CommandList.ends_with("BB"):
-		velocity -= Vector2.RIGHT.rotated(rotation) * 1000
-		UseRight(Fist.ATTACK.BLOCK)
-		await UseLeft(Fist.ATTACK.BLOCK)
-		SetIdle()
 	elif CommandList.ends_with("DB"):
 		velocity -= Vector2.RIGHT.rotated(rotation) * 1500
 		UseRight(Fist.ATTACK.BLOCK)

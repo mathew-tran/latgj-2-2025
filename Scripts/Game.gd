@@ -5,7 +5,15 @@ class_name Game
 var Points = 0
 
 signal OnPointsAdded(amount)
+signal OnPlayerDied
 
+func _ready() -> void:
+	await get_tree().process_frame
+	GetPlayer().GetHealthComponent().OnDeath.connect(OnPlayerDeath)
+	
+func OnPlayerDeath():
+	OnPlayerDied.emit()
+	
 func GetPlayer():
 	return Finder.GetPlayer()
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bbrr2wswji1br"]
+[gd_scene load_steps=14 format=3 uid="uid://bbrr2wswji1br"]
 
 [ext_resource type="Texture2D" uid="uid://dajfvqi5rswl" path="res://Art/Field/Playfield.png" id="1_g6ejq"]
 [ext_resource type="Script" uid="uid://d2a0kp8c23bp" path="res://Scripts/Game.gd" id="1_vm4ek"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bper63aev0v7w" path="res://Prefabs/Ropes.tscn" id="7_hueuk"]
 [ext_resource type="Script" uid="uid://xu0jnsabwqvj" path="res://Scripts/PointsLabel.gd" id="8_4qtod"]
 [ext_resource type="Texture2D" uid="uid://ped5bjbtsyk8" path="res://Art/EditorUI/EnemyPositionMarker.png" id="9_6a8me"]
+[ext_resource type="PackedScene" uid="uid://dvkjknsqasvn" path="res://Prefabs/GameOverUI.tscn" id="9_i0sg4"]
 [ext_resource type="Script" uid="uid://bitsd5mwlgbkn" path="res://Scripts/EnemyPositions.gd" id="9_yg4ot"]
 
 [node name="Game" type="Node2D" groups=["Game"]]
@@ -85,6 +86,8 @@ theme_override_font_sizes/font_size = 30
 text = "000000"
 horizontal_alignment = 1
 script = ExtResource("8_4qtod")
+
+[node name="GameOverUI" parent="CanvasLayer" instance=ExtResource("9_i0sg4")]
 
 [node name="Ropes" parent="." instance=ExtResource("7_hueuk")]
 position = Vector2(946, -18)

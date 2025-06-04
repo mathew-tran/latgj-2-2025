@@ -122,7 +122,7 @@ tracks/4/keys = {
 
 [sub_resource type="Animation" id="Animation_bu0jw"]
 resource_name = "defend"
-length = 0.8
+length = 1.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -130,7 +130,7 @@ tracks/0/path = NodePath(".:offset")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.566667, 0.766667),
+"times": PackedFloat32Array(0, 0.1, 0.566667, 1.46667),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(0, 0), Vector2(100, 0), Vector2(100, 0), Vector2(0, 0)]
@@ -142,7 +142,7 @@ tracks/1/path = NodePath(".:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.566667, 0.766667),
+"times": PackedFloat32Array(0, 0.0666667, 0.566667, 1.46667),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.523599, 0.523599, 0.0]
