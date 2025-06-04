@@ -9,6 +9,9 @@ var bIsActivated = false
 var MoveSpeed = 1600
 var RunSpeed = 4800
 
+@export var NormalTexture : Texture2D
+@export var HitTexture : Texture2D
+
 func GetHealthComponent():
 	return $HealthComponent
 	
@@ -17,10 +20,17 @@ func _ready() -> void:
 	bIsActivated = true
 	Finder.GetEnemyHealthContainer().RegisterEnemy(self)
 	
+func ShowHitSprite():
+	$Sprite2D.texture = HitTexture
+
+func ShowRegularSprite():
+	$Sprite2D.texture = NormalTexture
+	
 func Hit(damage, hitObject, knockback):
 	$HealthComponent.TakeDamage(damage)
 	var direction = (global_position - hitObject.global_position).normalized()
 	velocity += direction * knockback
+	
 	$HitAnim.play("hit")
 	$CPUParticles2D.global_position = lerp(hitObject.global_position, global_position, .8)
 	$CPUParticles2D.emitting = true

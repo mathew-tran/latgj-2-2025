@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 class_name Player
 
-var Speed = 1500
+var Speed = 2500
 
 var CommandList = ""
 
@@ -16,12 +16,29 @@ var CurrentState = STATE.IDLE
 var ComboMax = 6
 signal OnComboStringChange(comboString)
 
+var bIsPlayerDead = false
+
+
 func GetHealthComponent() -> HealthComponent:
 	return $HealthComponent
 	
 func _ready() -> void:
 	await get_tree().process_frame
 	ClearCommand()
+	$HealthComponent.OnDeath.connect(OnDeath)
+	$HealthComponent.OnTakeDamage.connect(OnTakeDamage)
+	
+func OnDeath():
+	$AnimationPlayer.stop()
+	bIsPlayerDead = true
+	$LeftHand.scale = Vector2(-1,1)
+	$RightHand.rotation_degrees = randf_range(-90, 90)
+	$RightHand.scale = Vector2(-1,1)
+	$LeftHand.rotation_degrees = randf_range(-90, 90)
+	$Head.texture = load("res://Art/Character/PlayerDead.png")
+	
+func OnTakeDamage(amount):
+	$AnimationPlayer.play("hit")
 	
 func SetAttacking():
 	CurrentState = STATE.ATTACKING
@@ -32,6 +49,10 @@ func SetIdle():
 func _process(delta: float) -> void:
 	velocity *= .92
 	move_and_slide()
+	if bIsPlayerDead:
+		return
+		
+	
 	look_at(get_global_mouse_position())
 	
 	var moveVector = Vector2.ZERO
@@ -285,6 +306,8 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 		if body.bEnabled == false:
 			return
 	$HealthComponent.TakeDamage(3)
+	var direction = (global_position - body.global_position).normalized()
+	velocity += direction * 1200
 	
 	if body is Bullet:
 		body.queue_free()

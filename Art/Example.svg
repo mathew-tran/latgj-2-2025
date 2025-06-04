@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="17316.338"
-     inkscape:cy="8849.0878"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="15001.977"
+     inkscape:cy="7491.7964"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -514,7 +514,12 @@
        y="8426.5915"
        width="121.62237"
        height="43.840621"
-       id="rect333" /></defs><g
+       id="rect333" /><rect
+       x="15189.361"
+       y="8426.5915"
+       width="121.62237"
+       height="43.840621"
+       id="rect335" /></defs><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"><circle
@@ -1241,79 +1246,79 @@
 </tspan><tspan
          x="616.20312"
          y="659.63351"
-         id="tspan334">c. Can also buy trinkets that work like passives
+         id="tspan335">c. Can also buy trinkets that work like passives
 </tspan><tspan
          x="616.20312"
          y="674.63351"
-         id="tspan335">d. Can also get HP recovery</tspan></text><text
+         id="tspan336">d. Can also get HP recovery</tspan></text><text
        xml:space="preserve"
        transform="matrix(1.6262595,0,0,1.6262595,-564.13386,-1484.3233)"
        id="text49"
        style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect50);display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1.73102"><tspan
          x="616.20312"
          y="614.63351"
-         id="tspan336">1. Cards have energy.
+         id="tspan337">1. Cards have energy.
 </tspan><tspan
          x="616.20312"
          y="629.63351"
-         id="tspan337">2. Hydra can have 3 energy per turn.
+         id="tspan338">2. Hydra can have 3 energy per turn.
 </tspan><tspan
          x="616.20312"
          y="644.63351"
-         id="tspan338">3. Each round, players health is retained
+         id="tspan339">3. Each round, players health is retained
 </tspan><tspan
          x="616.20312"
          y="659.63351"
-         id="tspan339">4. When turn ends, the cards are thrown to the </tspan><tspan
+         id="tspan340">4. When turn ends, the cards are thrown to the </tspan><tspan
          x="616.20312"
          y="674.63351"
-         id="tspan340">graveyard, then shuffled back when there are </tspan><tspan
+         id="tspan341">graveyard, then shuffled back when there are </tspan><tspan
          x="616.20312"
          y="689.63351"
-         id="tspan341">no cards left to draw</tspan></text><text
+         id="tspan342">no cards left to draw</tspan></text><text
        xml:space="preserve"
        transform="matrix(1.0737625,0,0,1.0737625,-498.59509,-1246.7179)"
        id="text50"
        style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect51);display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1.73102"><tspan
          x="616.20312"
          y="614.63351"
-         id="tspan342">1. Enemies telegraph
+         id="tspan343">1. Enemies telegraph
 </tspan><tspan
          x="616.20312"
          y="629.63351"
-         id="tspan343">2. Enemies can move around
+         id="tspan344">2. Enemies can move around
 </tspan><tspan
          x="616.20312"
          y="644.63351"
-         id="tspan344">3. Hydra can only hit the front. 
+         id="tspan345">3. Hydra can only hit the front. 
 </tspan><tspan
          x="616.20312"
          y="659.63351"
-         id="tspan345">Meaning enemies can 
+         id="tspan346">Meaning enemies can 
 </tspan><tspan
          x="616.20312"
          y="674.63351"
-         id="tspan346">hide behind the front row from taking </tspan><tspan
+         id="tspan347">hide behind the front row from taking </tspan><tspan
          x="616.20312"
          y="689.63351"
-         id="tspan347">damage</tspan></text><text
+         id="tspan348">damage</tspan></text><text
        xml:space="preserve"
        transform="matrix(1.6262595,0,0,1.6262595,1204.7272,-1725.7455)"
        id="text51"
        style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect52);display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1.73102"><tspan
          x="616.20312"
          y="614.63351"
-         id="tspan348">Play until you die ineveitably.
+         id="tspan349">Play until you die ineveitably.
 </tspan><tspan
          x="616.20312"
          y="629.63351"
-         id="tspan349">The further you go or the types of enemies you </tspan><tspan
+         id="tspan350">The further you go or the types of enemies you </tspan><tspan
          x="616.20312"
          y="644.63351"
-         id="tspan350">beat. The more unlocks you get for cards / </tspan><tspan
+         id="tspan351">beat. The more unlocks you get for cards / </tspan><tspan
          x="616.20312"
          y="659.63351"
-         id="tspan351">passives.</tspan></text><g
+         id="tspan352">passives.</tspan></text><g
        id="g53"
        transform="translate(1765.6111,-856.77323)"><rect
          style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.457999"
@@ -1345,41 +1350,41 @@
        style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect54);display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1.73102"><tspan
          x="616.20312"
          y="614.63351"
-         id="tspan352">1. Goal is that the player needs to make 
+         id="tspan353">1. Goal is that the player needs to make 
 </tspan><tspan
          x="616.20312"
          y="629.63351"
-         id="tspan353">their deck strong enough to survive longer.
+         id="tspan354">their deck strong enough to survive longer.
 </tspan><tspan
          x="616.20312"
          y="644.63351"
-         id="tspan354">i.e. Take out enemies, or become tankier to </tspan><tspan
+         id="tspan355">i.e. Take out enemies, or become tankier to </tspan><tspan
          x="616.20312"
          y="659.63351"
-         id="tspan355">survive hits.</tspan></text><text
+         id="tspan356">survive hits.</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,12.521987,0.10199502)"
        id="text54"
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect55);display:inline;fill:#818181;fill-opacity:1;stroke:none;stroke-width:1.73102"><tspan
          x="155.78906"
          y="2178.2407"
-         id="tspan356">Goals:
+         id="tspan357">Goals:
 </tspan><tspan
          x="155.78906"
          y="2258.2407"
-         id="tspan357">1. Learn ARPG. (i.e. Zelda / Cyberpunk)
+         id="tspan358">1. Learn ARPG. (i.e. Zelda / Cyberpunk)
 </tspan><tspan
          x="155.78906"
          y="2338.2407"
-         id="tspan358">2. Be able to make rooms to go between.
+         id="tspan359">2. Be able to make rooms to go between.
 </tspan><tspan
          x="155.78906"
          y="2418.2407"
-         id="tspan359">3. Get Better at art.
+         id="tspan360">3. Get Better at art.
 </tspan><tspan
          x="155.78906"
          y="2498.2407"
-         id="tspan360">4. Try to make a vertical slice of this game</tspan></text><text
+         id="tspan361">4. Try to make a vertical slice of this game</tspan></text><text
        xml:space="preserve"
        style="font-weight:bold;font-size:16.9333px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#818181;fill-opacity:1;stroke:none;stroke-width:0.457999"
        x="736.05945"
@@ -1400,85 +1405,85 @@
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect58);display:inline;fill:#818181;fill-opacity:1;stroke:none;stroke-width:1.73102"><tspan
          x="161.35352"
          y="2751.3227"
-         id="tspan361">Theme: 
+         id="tspan362">Theme: 
 </tspan><tspan
          x="161.35352"
          y="2831.3227"
-         id="tspan362">Akira inspired. (you are a psychic and you are trying to break out </tspan><tspan
+         id="tspan363">Akira inspired. (you are a psychic and you are trying to break out </tspan><tspan
          x="161.35352"
          y="2911.3227"
-         id="tspan363">of the lab)
+         id="tspan364">of the lab)
 </tspan><tspan
          x="161.35352"
          y="2991.3227"
-         id="tspan364">
+         id="tspan365">
 </tspan><tspan
          x="161.35352"
          y="3071.3227"
-         id="tspan365">Enemies: 
+         id="tspan366">Enemies: 
 </tspan><tspan
          x="161.35352"
          y="3151.3227"
-         id="tspan366">- People in the lab.
+         id="tspan367">- People in the lab.
 </tspan><tspan
          x="161.35352"
          y="3231.3227"
-         id="tspan367">
+         id="tspan368">
 </tspan><tspan
          x="161.35352"
          y="3311.3227"
-         id="tspan368">1. Doctors.
+         id="tspan369">1. Doctors.
 </tspan><tspan
          x="161.35352"
          y="3391.3227"
-         id="tspan369">2. Assistants
+         id="tspan370">2. Assistants
 </tspan><tspan
          x="161.35352"
          y="3471.3227"
-         id="tspan370">3. Security guard
+         id="tspan371">3. Security guard
 </tspan><tspan
          x="161.35352"
          y="3551.3227"
-         id="tspan371">4. Private merc team
+         id="tspan372">4. Private merc team
 </tspan><tspan
          x="161.35352"
          y="3631.3227"
-         id="tspan372">5. Militairy. (this is where you start fighting tanks!) 
+         id="tspan373">5. Militairy. (this is where you start fighting tanks!) 
 </tspan><tspan
          x="161.35352"
          y="3711.3227"
-         id="tspan373">6. You fight other psychics
+         id="tspan374">6. You fight other psychics
 </tspan><tspan
          x="161.35352"
          y="3791.3227"
-         id="tspan374">7. You fight the aliens.</tspan></text><text
+         id="tspan375">7. You fight the aliens.</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text59"
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect59);display:inline;fill:#818181;fill-opacity:1;stroke:none;stroke-width:1.73102"><tspan
          x="2856.2891"
          y="2883.2036"
-         id="tspan375">Lore.
+         id="tspan376">Lore.
 </tspan><tspan
          x="2856.2891"
          y="2963.2036"
-         id="tspan376">
+         id="tspan377">
 </tspan><tspan
          x="2856.2891"
          y="3043.2036"
-         id="tspan377">You are a lab experiment that was once a human. 
+         id="tspan378">You are a lab experiment that was once a human. 
 </tspan><tspan
          x="2856.2891"
          y="3123.2036"
-         id="tspan378">You got taken from the streets of a cyberpunk-like city.
+         id="tspan379">You got taken from the streets of a cyberpunk-like city.
 </tspan><tspan
          x="2856.2891"
          y="3203.2036"
-         id="tspan379">There is a company who abducts people and experiments on them
+         id="tspan380">There is a company who abducts people and experiments on them
 </tspan><tspan
          x="2856.2891"
          y="3283.2036"
-         id="tspan380">to make a new weapon against an alien entity.</tspan></text><image
+         id="tspan381">to make a new weapon against an alien entity.</tspan></text><image
        width="489.57843"
        height="28.798729"
        preserveAspectRatio="none"
@@ -1493,7 +1498,7 @@
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect60);display:inline;fill:#818181;fill-opacity:1;stroke:none;stroke-width:1.73102"><tspan
          x="72.785156"
          y="3994.6372"
-         id="tspan381">COLOR PALETTE</tspan></text><image
+         id="tspan382">COLOR PALETTE</tspan></text><image
        width="147.45828"
        height="239.61971"
        preserveAspectRatio="none"
@@ -1616,20 +1621,20 @@
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect95);display:inline;fill:#271c15;fill-opacity:1;stroke:#000000;stroke-width:1.73102;stroke-opacity:1"><tspan
          x="771.99219"
          y="4460.8364"
-         id="tspan382">After </tspan><tspan
+         id="tspan383">After </tspan><tspan
          x="771.99219"
          y="4540.8364"
-         id="tspan383">experiment</tspan></text><text
+         id="tspan384">experiment</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,136.171,-13.98513)"
        id="text96"
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect96);display:inline;fill:#271c15;fill-opacity:1;stroke:#000000;stroke-width:1.73102;stroke-opacity:1"><tspan
          x="771.99219"
          y="4460.8364"
-         id="tspan384">Before </tspan><tspan
+         id="tspan385">Before </tspan><tspan
          x="771.99219"
          y="4540.8364"
-         id="tspan385">experiment</tspan></text><ellipse
+         id="tspan386">experiment</tspan></text><ellipse
        style="fill:#cfc9b3;fill-opacity:1;stroke:#000000;stroke-width:0.12142;stroke-opacity:1"
        id="path96"
        cx="726.65265"
@@ -1749,32 +1754,32 @@
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect105);display:inline;fill:#786721;fill-opacity:1;stroke:#000000;stroke-width:1.73102;stroke-opacity:1"><tspan
          x="2852.3535"
          y="5818.1782"
-         id="tspan386">You are a courier, and you are delivering </tspan><tspan
+         id="tspan387">You are a courier, and you are delivering </tspan><tspan
          x="2852.3535"
          y="5898.1782"
-         id="tspan387">medicine to an outpost for sick patients.
+         id="tspan388">medicine to an outpost for sick patients.
 </tspan><tspan
          x="2852.3535"
          y="5978.1782"
-         id="tspan388">
+         id="tspan389">
 </tspan><tspan
          x="2852.3535"
          y="6058.1782"
-         id="tspan389">The world is taken over by robots. That want </tspan><tspan
+         id="tspan390">The world is taken over by robots. That want </tspan><tspan
          x="2852.3535"
          y="6138.1782"
-         id="tspan390">to kill you.
+         id="tspan391">to kill you.
 </tspan><tspan
          x="2852.3535"
          y="6218.1782"
-         id="tspan391">
+         id="tspan392">
 </tspan><tspan
          x="2852.3535"
          y="6298.1782"
-         id="tspan392">You have limited ammo. and the robots are </tspan><tspan
+         id="tspan393">You have limited ammo. and the robots are </tspan><tspan
          x="2852.3535"
          y="6378.1782"
-         id="tspan393">unkillable.
+         id="tspan394">unkillable.
 </tspan></text><ellipse
        style="fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:0.457999;stroke-opacity:1"
        id="ellipse105"
@@ -1905,10 +1910,10 @@
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect144);display:inline;fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:1.73102;stroke-opacity:1"><tspan
          x="5397.834"
          y="10669.147"
-         id="tspan394">Idle Deck </tspan><tspan
+         id="tspan395">Idle Deck </tspan><tspan
          x="5397.834"
          y="10749.147"
-         id="tspan395">Buidler</tspan></text><text
+         id="tspan396">Buidler</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text144"
@@ -1919,24 +1924,24 @@
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect146);display:inline;fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:1.73102;stroke-opacity:1"><tspan
          x="6768.4258"
          y="10433.061"
-         id="tspan396">1. Is you auto play your deck
+         id="tspan397">1. Is you auto play your deck
 </tspan><tspan
          x="6768.4258"
          y="10513.061"
-         id="tspan397">2. Every 30 seconds, you are </tspan><tspan
+         id="tspan398">2. Every 30 seconds, you are </tspan><tspan
          x="6768.4258"
          y="10593.061"
-         id="tspan398">greeted to a shop or an event </tspan><tspan
+         id="tspan399">greeted to a shop or an event </tspan><tspan
          x="6768.4258"
          y="10673.061"
-         id="tspan399">to modify your deck
+         id="tspan400">to modify your deck
 </tspan><tspan
          x="6768.4258"
          y="10753.061"
-         id="tspan400">3. Kill all 100 demons that </tspan><tspan
+         id="tspan401">3. Kill all 100 demons that </tspan><tspan
          x="6768.4258"
          y="10833.061"
-         id="tspan401">came out of the portal</tspan></text><text
+         id="tspan402">came out of the portal</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text146"
@@ -1947,19 +1952,19 @@
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect148);display:inline;fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:1.73102;stroke-opacity:1"><tspan
          x="7735.748"
          y="11439.979"
-         id="tspan402">Starter Deck composition
+         id="tspan403">Starter Deck composition
 </tspan><tspan
          x="7735.748"
          y="11519.979"
-         id="tspan403"> 3 attack cards.
+         id="tspan404"> 3 attack cards.
 </tspan><tspan
          x="7735.748"
          y="11599.979"
-         id="tspan404"> 1 defend card.
+         id="tspan405"> 1 defend card.
 </tspan><tspan
          x="7735.748"
          y="11679.979"
-         id="tspan405">
+         id="tspan406">
 </tspan></text><circle
        style="fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:0.457999;stroke-opacity:1"
        id="path148"
@@ -1972,7 +1977,7 @@
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect149);display:inline;fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:1.73102;stroke-opacity:1"><tspan
          x="5800"
          y="12286.389"
-         id="tspan406">1</tspan></text><rect
+         id="tspan407">1</tspan></text><rect
        style="fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:0.457999;stroke-opacity:1"
        id="rect150"
        width="211.66666"
@@ -1991,39 +1996,39 @@
        style="font-weight:bold;font-size:64px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect152);display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.73102;stroke-opacity:1"><tspan
          x="8692"
          y="10598.389"
-         id="tspan407">Shop - buy cards, trinkets
+         id="tspan408">Shop - buy cards, trinkets
 </tspan><tspan
          x="8692"
          y="10678.389"
-         id="tspan408">Trade - where they ask if you want to </tspan><tspan
+         id="tspan409">Trade - where they ask if you want to </tspan><tspan
          x="8692"
          y="10758.389"
-         id="tspan409">trade X for a card. 
+         id="tspan410">trade X for a card. 
 </tspan><tspan
          x="8692"
          y="10838.389"
-         id="tspan410">Could be one of your cards, or taking </tspan><tspan
+         id="tspan411">Could be one of your cards, or taking </tspan><tspan
          x="8692"
          y="10918.389"
-         id="tspan411">damage. Or taking a relic of yours.</tspan></text><text
+         id="tspan412">damage. Or taking a relic of yours.</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text152"
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect153);display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.73102;stroke-opacity:1"><tspan
          x="7568.8711"
          y="8165.572"
-         id="tspan412">1. Game is about fighting all the demons that </tspan><tspan
+         id="tspan413">1. Game is about fighting all the demons that </tspan><tspan
          x="7568.8711"
          y="8285.572"
-         id="tspan413">came from the portal.
+         id="tspan414">came from the portal.
 </tspan><tspan
          x="7568.8711"
          y="8405.572"
-         id="tspan414">2. You are a hero, tasked to slay them all.
+         id="tspan415">2. You are a hero, tasked to slay them all.
 </tspan><tspan
          x="7568.8711"
          y="8525.572"
-         id="tspan415">3. Build up your arsenal to beat all the demons.</tspan></text><g
+         id="tspan416">3. Build up your arsenal to beat all the demons.</tspan></text><g
        id="g161"
        transform="matrix(0.99990696,0,0,1.0233127,-1435.2446,-330.93166)"><path
          id="path153"
@@ -2257,55 +2262,55 @@
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect188);display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1.73102;stroke-opacity:1"><tspan
          x="12080"
          y="2775.5837"
-         id="tspan416">Boxing rogue-like beat em up.
+         id="tspan417">Boxing rogue-like beat em up.
 </tspan><tspan
          x="12080"
          y="2895.5837"
-         id="tspan417">You are a newcomer and you beat up everyone </tspan><tspan
+         id="tspan418">You are a newcomer and you beat up everyone </tspan><tspan
          x="12080"
          y="3015.5837"
-         id="tspan418">at the boxing ring.
+         id="tspan419">at the boxing ring.
 </tspan><tspan
          x="12080"
          y="3135.5837"
-         id="tspan419">
+         id="tspan420">
 </tspan><tspan
          x="12080"
          y="3255.5837"
-         id="tspan420">You can swap techniques in between each </tspan><tspan
+         id="tspan421">You can swap techniques in between each </tspan><tspan
          x="12080"
          y="3375.5837"
-         id="tspan421">round.
+         id="tspan422">round.
 </tspan><tspan
          x="12080"
          y="3495.5837"
-         id="tspan422">
+         id="tspan423">
 </tspan><tspan
          x="12080"
          y="3615.5837"
-         id="tspan423">For example, a simple jab, versus a flicker jab. </tspan><tspan
+         id="tspan424">For example, a simple jab, versus a flicker jab. </tspan><tspan
          x="12080"
          y="3735.5837"
-         id="tspan424">Or a straight cross.
+         id="tspan425">Or a straight cross.
 </tspan><tspan
          x="12080"
          y="3855.5837"
-         id="tspan425">
+         id="tspan426">
 </tspan><tspan
          x="12080"
          y="3975.5837"
-         id="tspan426">Dynasty warriors esque. Fight a bunch minions, </tspan><tspan
+         id="tspan427">Dynasty warriors esque. Fight a bunch minions, </tspan><tspan
          x="12080"
          y="4095.5837"
-         id="tspan427">then fight harder foes.
+         id="tspan428">then fight harder foes.
 </tspan><tspan
          x="12080"
          y="4215.5837"
-         id="tspan428">
+         id="tspan429">
 </tspan><tspan
          x="12080"
          y="4335.5837"
-         id="tspan429">.. Geometry wars could also be one against all.</tspan></text><image
+         id="tspan430">.. Geometry wars could also be one against all.</tspan></text><image
        width="688.64075"
        height="40.508278"
        preserveAspectRatio="none"
@@ -2368,7 +2373,7 @@
        height="369.06799"
        x="3978.4355"
        y="1403.6626"
-       inkscape:export-filename="Playfield.png"
+       inkscape:export-filename="Field\Playfield.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" /><rect
        style="fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:0.792001;stroke-dasharray:none;stroke-opacity:1"
@@ -2429,7 +2434,7 @@
        id="rect212"
        width="428.05887"
        height="9.728611"
-       x="4015.6711"
+       x="4007.5894"
        y="1739.1761" /><g
        id="g200"
        transform="translate(-7.4835468,314.30896)"><circle
@@ -2476,9 +2481,9 @@
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect216);display:inline;fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:2.99339;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="13556.652"
          y="5956.57"
-         id="tspan431"><tspan
+         id="tspan432"><tspan
            dx="0 73.96875 57 58.03125 39.890625 28.125 60.796875 39.890625 57"
-           id="tspan430">Next Step</tspan></tspan></text><text
+           id="tspan431">Next Step</tspan></tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text217"
@@ -2489,92 +2494,92 @@
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect218);display:inline;fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:2.99339;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="13508.568"
          y="5942.4275"
-         id="tspan432">Next step. 
+         id="tspan433">Next step. 
 </tspan><tspan
          x="13508.568"
          y="6062.4275"
-         id="tspan433">Make robot to hit.</tspan></text><text
+         id="tspan434">Make robot to hit.</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text219"
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect219);display:inline;fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:2.99339;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="16868.738"
          y="2859.4431"
-         id="tspan434">What makes a good boxing game?
+         id="tspan435">What makes a good boxing game?
 </tspan><tspan
          x="16868.738"
          y="2979.4431"
-         id="tspan435">
+         id="tspan436">
 </tspan><tspan
          x="16868.738"
          y="3099.4431"
-         id="tspan436">1. Wii boxing
+         id="tspan437">1. Wii boxing
 </tspan><tspan
          x="16868.738"
          y="3219.4431"
-         id="tspan437">2. Punch out -- considered a classic
+         id="tspan438">2. Punch out -- considered a classic
 </tspan><tspan
          x="16868.738"
          y="3339.4431"
-         id="tspan438">3. Hajime no ippo.
+         id="tspan439">3. Hajime no ippo.
 </tspan><tspan
          x="16868.738"
          y="3459.4431"
-         id="tspan439">
+         id="tspan440">
 </tspan><tspan
          x="16868.738"
          y="3579.4431"
-         id="tspan440">Research this and see what makes it feelgood?</tspan></text><text
+         id="tspan441">Research this and see what makes it feelgood?</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text220"
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect220);display:inline;fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:2.99339;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="19906.471"
          y="2384.2673"
-         id="tspan441">Wii boxing
+         id="tspan442">Wii boxing
 </tspan><tspan
          x="19906.471"
          y="2504.2673"
-         id="tspan442">Defend, Evade, Attack
+         id="tspan443">Defend, Evade, Attack
 </tspan><tspan
          x="19906.471"
          y="2624.2673"
-         id="tspan443">
+         id="tspan444">
 </tspan><tspan
          x="19906.471"
          y="2744.2673"
-         id="tspan444">Lower HP to zero
+         id="tspan445">Lower HP to zero
 </tspan><tspan
          x="19906.471"
          y="2864.2673"
-         id="tspan445">
+         id="tspan446">
 </tspan><tspan
          x="19906.471"
          y="2984.2673"
-         id="tspan446">Try to read opponents.
+         id="tspan447">Try to read opponents.
 </tspan><tspan
          x="19906.471"
          y="3104.2673"
-         id="tspan447">
+         id="tspan448">
 </tspan><tspan
          x="19906.471"
          y="3224.2673"
-         id="tspan448">KO opponents.
+         id="tspan449">KO opponents.
 </tspan><tspan
          x="19906.471"
          y="3344.2673"
-         id="tspan449">
+         id="tspan450">
 </tspan><tspan
          x="19906.471"
          y="3464.2673"
-         id="tspan450">You can dizzy opponents by repeated </tspan><tspan
+         id="tspan451">You can dizzy opponents by repeated </tspan><tspan
          x="19906.471"
          y="3584.2673"
-         id="tspan451">hits.
+         id="tspan452">hits.
 </tspan><tspan
          x="19906.471"
          y="3704.2673"
-         id="tspan452">
+         id="tspan453">
 </tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,22.45064,5.9868374)"
@@ -2582,58 +2587,58 @@
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect221);display:inline;fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:2.99339;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="19810.305"
          y="3855.0486"
-         id="tspan453">Punch out
+         id="tspan454">Punch out
 </tspan><tspan
          x="19810.305"
          y="3975.0486"
-         id="tspan454">
+         id="tspan455">
 </tspan><tspan
          x="19810.305"
          y="4095.0486"
-         id="tspan455">hit till HP is zero.
+         id="tspan456">hit till HP is zero.
 </tspan><tspan
          x="19810.305"
          y="4215.0486"
-         id="tspan456">
+         id="tspan457">
 </tspan><tspan
          x="19810.305"
          y="4335.0486"
-         id="tspan457">Enemies have tells.
+         id="tspan458">Enemies have tells.
 </tspan><tspan
          x="19810.305"
          y="4455.0486"
-         id="tspan458">
+         id="tspan459">
 </tspan><tspan
          x="19810.305"
          y="4575.0486"
-         id="tspan459">If you hit them enough, sometimes you can KO them</tspan></text><text
+         id="tspan460">If you hit them enough, sometimes you can KO them</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text222"
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect223);display:inline;fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:2.99339;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="19832.932"
          y="4929.8513"
-         id="tspan460">In general.
+         id="tspan461">In general.
 </tspan><tspan
          x="19832.932"
          y="5049.8513"
-         id="tspan461">Stronger opponents have this.
+         id="tspan462">Stronger opponents have this.
 </tspan><tspan
          x="19832.932"
          y="5169.8513"
-         id="tspan462">1. More HP
+         id="tspan463">1. More HP
 </tspan><tspan
          x="19832.932"
          y="5289.8513"
-         id="tspan463">2. More damage
+         id="tspan464">2. More damage
 </tspan><tspan
          x="19832.932"
          y="5409.8513"
-         id="tspan464">3. Harder tells
+         id="tspan465">3. Harder tells
 </tspan><tspan
          x="19832.932"
          y="5529.8513"
-         id="tspan465">4. More complicated moves</tspan></text><g
+         id="tspan466">4. More complicated moves</tspan></text><g
        id="g233"
        transform="translate(33.666283,-27.439172)"><path
          style="fill:#252246;fill-opacity:1;stroke:#000000;stroke-width:0.792001;stroke-dasharray:none;stroke-opacity:1"
@@ -2793,71 +2798,71 @@
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect97);display:inline;fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:2.99339;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="13508.568"
          y="5942.4275"
-         id="tspan466">Next step. 
+         id="tspan467">Next step. 
 </tspan><tspan
          x="13508.568"
          y="6062.4275"
-         id="tspan467">Opponents are all your </tspan><tspan
+         id="tspan468">Opponents are all your </tspan><tspan
          x="13508.568"
          y="6182.4275"
-         id="tspan468">kitchen appliances</tspan></text><text
+         id="tspan469">kitchen appliances</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-146.19665,349.81032)"
        id="text106"
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect106);display:inline;fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:2.99339;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="13508.568"
          y="5942.4275"
-         id="tspan469">Toaster
+         id="tspan470">Toaster
 </tspan><tspan
          x="13508.568"
          y="6062.4275"
-         id="tspan470">Microwave
+         id="tspan471">Microwave
 </tspan><tspan
          x="13508.568"
          y="6182.4275"
-         id="tspan471">Dishwasher
+         id="tspan472">Dishwasher
 </tspan><tspan
          x="13508.568"
          y="6302.4275"
-         id="tspan472">Fridge
+         id="tspan473">Fridge
 </tspan><tspan
          x="13508.568"
          y="6422.4275"
-         id="tspan473">Oven</tspan></text><text
+         id="tspan474">Oven</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-454.17165,207.99366)"
        id="text149"
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect154);display:inline;fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:2.99339;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="13508.568"
          y="5942.4275"
-         id="tspan474">Maybe add a prologue.
+         id="tspan475">Maybe add a prologue.
 </tspan><tspan
          x="13508.568"
          y="6062.4275"
-         id="tspan475">You are boxer with a </tspan><tspan
+         id="tspan476">You are boxer with a </tspan><tspan
          x="13508.568"
          y="6182.4275"
-         id="tspan476">weird dream.
+         id="tspan477">weird dream.
 </tspan><tspan
          x="13508.568"
          y="6302.4275"
-         id="tspan477">You go to the boxing </tspan><tspan
+         id="tspan478">You go to the boxing </tspan><tspan
          x="13508.568"
          y="6422.4275"
-         id="tspan478">ring.  You notice no </tspan><tspan
+         id="tspan479">ring.  You notice no </tspan><tspan
          x="13508.568"
          y="6542.4275"
-         id="tspan479">one is there..
+         id="tspan480">one is there..
 </tspan><tspan
          x="13508.568"
          y="6662.4275"
-         id="tspan480">Then ALL of the </tspan><tspan
+         id="tspan481">Then ALL of the </tspan><tspan
          x="13508.568"
          y="6782.4275"
-         id="tspan481">kitchen appliances are </tspan><tspan
+         id="tspan482">kitchen appliances are </tspan><tspan
          x="13508.568"
          y="6902.4275"
-         id="tspan482">attacking you.</tspan></text><g
+         id="tspan483">attacking you.</tspan></text><g
        id="g196"
        transform="translate(234.95,-4.7625)"
        style="fill:#ba2f4a;fill-opacity:1"><rect
@@ -2936,45 +2941,45 @@
        style="font-weight:bold;font-size:96px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect225);display:inline;fill:#66348f;fill-opacity:1;stroke:#000000;stroke-width:2.99339;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="13508.568"
          y="5942.4275"
-         id="tspan483">Next step. 
+         id="tspan484">Next step. 
 </tspan><tspan
          x="13508.568"
          y="6062.4275"
-         id="tspan484">Make opponent AI </tspan><tspan
+         id="tspan485">Make opponent AI </tspan><tspan
          x="13508.568"
          y="6182.4275"
-         id="tspan485">somewhat smart?</tspan></text><text
+         id="tspan486">somewhat smart?</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text225"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect226);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect226);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="14872"
          y="8426.948"
-         id="tspan486">Neutral Phase
+         id="tspan487">Neutral Phase
 </tspan><tspan
          x="14872"
          y="8441.948"
-         id="tspan487">
+         id="tspan488">
 </tspan><tspan
          x="14872"
          y="8456.948"
-         id="tspan488">Aggressive Phase
+         id="tspan489">Aggressive Phase
 </tspan><tspan
          x="14872"
          y="8471.948"
-         id="tspan489">
+         id="tspan490">
 </tspan><tspan
          x="14872"
          y="8486.948"
-         id="tspan490">Scared Phase
+         id="tspan491">Scared Phase
 </tspan><tspan
          x="14872"
          y="8501.948"
-         id="tspan491">
+         id="tspan492">
 </tspan><tspan
          x="14872"
          y="8516.948"
-         id="tspan492">
+         id="tspan493">
 </tspan></text><circle
        style="fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="path261"
@@ -3001,24 +3006,24 @@
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text267"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect267);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect267);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan493">NEUTRAL</tspan></text><text
+         id="tspan494">NEUTRAL</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-46.772167,54.81698)"
        id="text268"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect268);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect268);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan494">Aggressive</tspan></text><text
+         id="tspan495">Aggressive</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,43.217483,54.81698)"
        id="text269"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect269);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect269);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan495">Scared</tspan></text><g
+         id="tspan496">Scared</tspan></text><g
        id="g270"
        transform="rotate(-123.75542,4041.6219,2291.5179)"><path
          style="fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
@@ -3043,10 +3048,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-26.134667,113.2899)"
        id="text273"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect273);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect273);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan496">Entry AI
+         id="tspan497">Entry AI
 </tspan></text><g
        id="g275"
        transform="rotate(-123.75542,4076.0177,2273.135)"><path
@@ -3064,10 +3069,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,42.657,113.2899)"
        id="text275"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect275);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect275);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan497">Phase 1</tspan></text><circle
+         id="tspan498">Phase 1</tspan></text><circle
        style="fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="circle276"
        cx="4139.2324"
@@ -3076,30 +3081,30 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,112.24242,113.2899)"
        id="text276"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect276);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect276);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan498">Phase 2</tspan></text><text
+         id="tspan499">Phase 2</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,2.778125,-1.4552083)"
        id="text278"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect279);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect279);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15333.5"
          y="8889.448"
-         id="tspan499">20 damage </tspan><tspan
+         id="tspan500">20 damage </tspan><tspan
          x="15333.5"
          y="8904.448"
-         id="tspan500">taken</tspan></text><text
+         id="tspan501">taken</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,73.951042,-1.4552083)"
        id="text280"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect280);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect280);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15333.5"
          y="8889.448"
-         id="tspan501">20 damage </tspan><tspan
+         id="tspan502">20 damage </tspan><tspan
          x="15333.5"
          y="8904.448"
-         id="tspan502">taken</tspan></text><circle
+         id="tspan503">taken</tspan></text><circle
        style="fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="circle280"
        cx="4140.8198"
@@ -3108,13 +3113,13 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,111.77194,-20.020215)"
        id="text281"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect281);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect281);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan503">This is how I </tspan><tspan
+         id="tspan504">This is how I </tspan><tspan
          x="15189.361"
          y="8452.5398"
-         id="tspan504">usually do AI</tspan></text><rect
+         id="tspan505">usually do AI</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect282"
        width="53.974998"
@@ -3126,17 +3131,17 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,128.64659,8.2503137)"
        id="text282"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect283);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect283);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan505">Shoot</tspan></text><text
+         id="tspan506">Shoot</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,128.64659,8.2503137)"
        id="text283"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect284);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect284);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan506">Shoot</tspan></text><rect
+         id="tspan507">Shoot</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect285"
        width="53.974998"
@@ -3148,10 +3153,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,128.64659,23.404496)"
        id="text285"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect286);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect286);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan507">Run Away</tspan></text><rect
+         id="tspan508">Run Away</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect287"
        width="53.974998"
@@ -3163,10 +3168,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,128.64659,36.765954)"
        id="text287"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect288);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect288);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan508">Stand</tspan></text><path
+         id="tspan509">Stand</tspan></text><path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        d="m 4192.0959,2238.5159 6.5479,3.7418 -8.4188,12.9091 10.664,6.1739 -9.7287,8.9803"
        id="path288" /><path
@@ -3182,20 +3187,20 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,211.4581,-36.201299)"
        id="text291"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect291);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect291);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan509">How do beat em </tspan><tspan
+         id="tspan510">How do beat em </tspan><tspan
          x="15189.361"
          y="8452.5398"
-         id="tspan510">ups do AI?
+         id="tspan511">ups do AI?
 </tspan><tspan
          x="15189.361"
          y="8467.5398"
-         id="tspan511">Like castle </tspan><tspan
+         id="tspan512">Like castle </tspan><tspan
          x="15189.361"
          y="8482.5398"
-         id="tspan512">crashers?</tspan></text><circle
+         id="tspan513">crashers?</tspan></text><circle
        style="fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="circle292"
        cx="4263.9819"
@@ -3204,10 +3209,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,236.61744,22.404854)"
        id="text292"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect292);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect292);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan513">Melee Assist</tspan></text><circle
+         id="tspan514">Melee Assist</tspan></text><circle
        style="fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="circle293"
        cx="4263.9819"
@@ -3216,10 +3221,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,236.61744,61.880563)"
        id="text293"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect293);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect293);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan514">Chase</tspan></text><circle
+         id="tspan515">Chase</tspan></text><circle
        style="fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="circle294"
        cx="4264.356"
@@ -3228,10 +3233,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,235.49491,99.298297)"
        id="text294"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect294);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect294);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan515">Ranged Assist</tspan></text><circle
+         id="tspan516">Ranged Assist</tspan></text><circle
        style="fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="circle295"
        cx="4263.9819"
@@ -3240,10 +3245,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,236.61744,135.96768)"
        id="text295"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect295);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect295);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan516">Run Away</tspan></text><rect
+         id="tspan517">Run Away</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect296"
        width="53.974998"
@@ -3255,108 +3260,108 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,219.26638,-2.200728)"
        id="text296"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect297);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect297);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan517">ROLES</tspan></text><text
+         id="tspan518">ROLES</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text297"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect298);fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect298);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="16271.941"
          y="8368.9499"
-         id="tspan518">Maybe I can do something similar to castle crashers. </tspan><tspan
+         id="tspan519">Maybe I can do something similar to castle crashers. </tspan><tspan
          x="16271.941"
          y="8383.9499"
-         id="tspan519">but more simplistic
+         id="tspan520">but more simplistic
 </tspan><tspan
          x="16271.941"
          y="8398.9499"
-         id="tspan520">
+         id="tspan521">
 </tspan><tspan
          x="16271.941"
          y="8413.9499"
-         id="tspan521">Enemies will have a state which is their current role.
+         id="tspan522">Enemies will have a state which is their current role.
 </tspan><tspan
          x="16271.941"
          y="8428.9499"
-         id="tspan522">They go from ENTRY role, then can move onto 1 of 3 </tspan><tspan
+         id="tspan523">They go from ENTRY role, then can move onto 1 of 3 </tspan><tspan
          x="16271.941"
          y="8443.9499"
-         id="tspan523">roles. Essentially enemy can have 3 attack patterns.
+         id="tspan524">roles. Essentially enemy can have 3 attack patterns.
 </tspan><tspan
          x="16271.941"
          y="8458.9499"
-         id="tspan524">
+         id="tspan525">
 </tspan><tspan
          x="16271.941"
          y="8473.9499"
-         id="tspan525">When there role is done. they try out a different role.
+         id="tspan526">When there role is done. they try out a different role.
 </tspan><tspan
          x="16271.941"
          y="8488.9499"
-         id="tspan526">
+         id="tspan527">
 </tspan><tspan
          x="16271.941"
          y="8503.9499"
-         id="tspan527">A role is simply a sequence of actions (similar to </tspan><tspan
+         id="tspan528">A role is simply a sequence of actions (similar to </tspan><tspan
          x="16271.941"
          y="8518.9499"
-         id="tspan528">what I did before)
+         id="tspan529">what I did before)
 </tspan><tspan
          x="16271.941"
          y="8533.9499"
-         id="tspan529">
+         id="tspan530">
 </tspan><tspan
          x="16271.941"
          y="8548.9499"
-         id="tspan530">Each enemy can implement their roles differently
+         id="tspan531">Each enemy can implement their roles differently
 </tspan><tspan
          x="16271.941"
          y="8563.9499"
-         id="tspan531">
-</tspan><tspan
-         x="16271.941"
-         y="8578.9499"
          id="tspan532">
 </tspan><tspan
          x="16271.941"
+         y="8578.9499"
+         id="tspan533">
+</tspan><tspan
+         x="16271.941"
          y="8593.9499"
-         id="tspan533">Thinking the game will be more like a boss rush. 
+         id="tspan534">Thinking the game will be more like a boss rush. 
 </tspan><tspan
          x="16271.941"
          y="8608.9499"
-         id="tspan534">So mainly 1 v 1s. Allows me to curate the fights </tspan><tspan
+         id="tspan535">So mainly 1 v 1s. Allows me to curate the fights </tspan><tspan
          x="16271.941"
          y="8623.9499"
-         id="tspan535">better</tspan></text><text
+         id="tspan536">better</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text298"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect299);fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect299);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="16307"
          y="8674.948"
-         id="tspan536">Roles:
+         id="tspan537">Roles:
 </tspan><tspan
          x="16307"
          y="8689.948"
-         id="tspan537">Entry
+         id="tspan538">Entry
 </tspan><tspan
          x="16307"
          y="8704.948"
-         id="tspan538">Attack 1
+         id="tspan539">Attack 1
 </tspan><tspan
          x="16307"
          y="8719.948"
-         id="tspan539">Attack 2
+         id="tspan540">Attack 2
 </tspan><tspan
          x="16307"
          y="8734.948"
-         id="tspan540">Attack 3
+         id="tspan541">Attack 3
 </tspan><tspan
          x="16307"
          y="8749.948"
-         id="tspan541">
+         id="tspan542">
 </tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect300"
@@ -3369,10 +3374,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,341.80946,73.570183)"
        id="text300"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect301);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect301);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan542">ROLE</tspan></text><rect
+         id="tspan543">ROLE</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect302"
        width="53.974998"
@@ -3384,10 +3389,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,353.01326,86.56698)"
        id="text302"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect303);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect303);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan543">Action 1</tspan></text><rect
+         id="tspan544">Action 1</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect304"
        width="53.974998"
@@ -3399,10 +3404,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,353.01326,99.002397)"
        id="text304"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect305);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect305);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan544">Action 2</tspan></text><rect
+         id="tspan545">Action 2</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect306"
        width="53.974998"
@@ -3414,10 +3419,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,353.01326,112.49615)"
        id="text306"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect307);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect307);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan545">Action 3</tspan></text><rect
+         id="tspan546">Action 3</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect308"
        width="53.974998"
@@ -3429,20 +3434,20 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,341.03959,126.15362)"
        id="text308"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect309);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect309);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan546">Move to Next Role</tspan></text><text
+         id="tspan547">Move to Next Role</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,29.633333,8.4666667)"
        id="text309"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect310);fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect310);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="16723"
          y="8575.948"
-         id="tspan547">Let's figure out how toasty should </tspan><tspan
+         id="tspan548">Let's figure out how toasty should </tspan><tspan
          x="16723"
          y="8590.948"
-         id="tspan548">attack.</tspan></text><rect
+         id="tspan549">attack.</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect311"
        width="53.974998"
@@ -3454,10 +3459,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,452.40529,73.570183)"
        id="text311"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect312);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect312);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan549">Attack Pattern 1</tspan></text><rect
+         id="tspan550">Attack Pattern 1</tspan></text><rect
        style="fill:#a7ceff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect313"
        width="53.974998"
@@ -3469,10 +3474,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,456.86222,86.56698)"
        id="text313"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect314);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect314);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan550">Run to top</tspan></text><rect
+         id="tspan551">Run to top</tspan></text><rect
        style="fill:#a7ceff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect315"
        width="53.974998"
@@ -3484,13 +3489,13 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,454.34868,100.19302)"
        id="text315"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect316);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect316);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan551">Shoot 3 bullets at </tspan><tspan
+         id="tspan552">Shoot 3 bullets at </tspan><tspan
          x="15189.361"
          y="8452.5398"
-         id="tspan552">player</tspan></text><rect
+         id="tspan553">player</tspan></text><rect
        style="fill:#a7ceff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect317"
        width="53.974998"
@@ -3502,13 +3507,13 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,520.95225,85.071607)"
        id="text317"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect318);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect318);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan553">Dash to left of </tspan><tspan
+         id="tspan554">Dash to left of </tspan><tspan
          x="15189.361"
          y="8452.5398"
-         id="tspan554">player</tspan></text><rect
+         id="tspan555">player</tspan></text><rect
        style="fill:#a7ceff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect319"
        width="53.974998"
@@ -3520,10 +3525,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,520.95225,98.168487)"
        id="text319"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect320);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect320);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan555">Shoot</tspan></text><rect
+         id="tspan556">Shoot</tspan></text><rect
        style="fill:#a7ceff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect321"
        width="53.974998"
@@ -3535,10 +3540,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,520.95225,111.13307)"
        id="text321"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect322);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect322);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan556">Dash below player</tspan></text><rect
+         id="tspan557">Dash below player</tspan></text><rect
        style="fill:#a7ceff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect323"
        width="53.974998"
@@ -3550,10 +3555,10 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,520.95225,125.81745)"
        id="text323"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect324);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect324);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan557">Shoot</tspan></text><rect
+         id="tspan558">Shoot</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect325"
        width="53.974998"
@@ -3565,17 +3570,17 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,520.69265,73.570183)"
        id="text325"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect326);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect326);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan558">Attack Pattern 2</tspan></text><text
+         id="tspan559">Attack Pattern 2</tspan></text><text
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text326"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect327);fill:#a7ceff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect327);display:inline;fill:#a7ceff;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="17102.793"
          y="8817.2566"
-         id="tspan559">s</tspan></text><rect
+         id="tspan560">s</tspan></text><rect
        style="fill:#a7ceff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect328"
        width="53.974998"
@@ -3595,20 +3600,20 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,520.95225,141.71999)"
        id="text329"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect330);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect330);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan560">Dash Right of </tspan><tspan
+         id="tspan561">Dash Right of </tspan><tspan
          x="15189.361"
          y="8452.5398"
-         id="tspan561">player</tspan></text><text
+         id="tspan562">player</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,520.95225,157.24835)"
        id="text330"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect331);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect331);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan562">Shoot</tspan></text><rect
+         id="tspan563">Shoot</tspan></text><rect
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
        id="rect332"
        width="53.974998"
@@ -3620,7 +3625,146 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,585.51557,73.570183)"
        id="text332"
-       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect333);fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect333);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="15189.361"
          y="8437.5398"
-         id="tspan563">Attack Pattern 3</tspan></text></g></svg>
+         id="tspan564">Attack Pattern 3</tspan></text><rect
+       style="fill:#a7ceff;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
+       id="rect334"
+       width="53.974998"
+       height="10.847917"
+       x="4592.4814"
+       y="2313.4763"
+       rx="5.6041374"
+       ry="6.233016" /><text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,583.43987,87.317344)"
+       id="text334"
+       style="font-weight:bold;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect335);display:inline;fill:#ba2f4a;fill-opacity:1;stroke:none;stroke-width:5.901;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="15189.361"
+         y="8437.5398"
+         id="tspan565">Charge at Player</tspan></text><g
+       id="g340"
+       transform="translate(0,-3.805954)"
+       inkscape:export-filename="Field\Ropes.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><rect
+         style="fill:#831961;fill-opacity:1;stroke:none;stroke-width:0.838558;stroke-dasharray:none;stroke-opacity:1"
+         id="rect336"
+         width="7.9374995"
+         height="385.23334"
+         x="3968.7124"
+         y="1397"
+         rx="1.6165781"
+         ry="6.233016" /><rect
+         style="fill:#831961;fill-opacity:1;stroke:none;stroke-width:0.838558;stroke-dasharray:none;stroke-opacity:1"
+         id="rect337"
+         width="7.9374995"
+         height="385.23334"
+         x="3952.3083"
+         y="1397"
+         rx="1.6165781"
+         ry="6.233016" /></g><g
+       id="g339"><path
+         id="rect338"
+         style="fill:#831961;stroke-width:0.838558"
+         transform="rotate(-90)"
+         d="m -1782.8292,3980.3189 h 4.7043 c 0.8956,0 1.6166,2.7799 1.6166,6.233 v 470.1339 c 0,3.4531 -0.721,6.233 -1.6166,6.233 h -4.7043 c -0.8956,0 -1.6166,-2.7799 -1.6166,-6.233 v -470.1339 c 0,-3.4531 0.721,-6.233 1.6166,-6.233 z"
+         sodipodi:nodetypes="sssssssss" /><path
+         id="rect339"
+         style="fill:#831961;stroke-width:0.838558"
+         transform="rotate(-90)"
+         d="m -1799.2333,3980.3189 h 4.7044 c 0.8956,0 1.6165,2.7799 1.6165,6.233 v 470.1339 c 0,3.4531 -0.7209,6.233 -1.6165,6.233 h -4.7044 c -0.8956,0 -1.6166,-2.7799 -1.6166,-6.233 v -470.1339 c 0,-3.4531 0.721,-6.233 1.6166,-6.233 z"
+         sodipodi:nodetypes="sssssssss" /></g><circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
+       id="path340"
+       cx="3961.342"
+       cy="1838.4883"
+       r="26.722916"
+       inkscape:export-filename="Field\Pole.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" /><circle
+       style="fill:#831961;fill-opacity:1;stroke:none;stroke-width:1.29852;stroke-dasharray:none;stroke-opacity:1"
+       id="circle340"
+       cx="3961.342"
+       cy="1838.4883"
+       r="22.224998"
+       inkscape:export-filename="Field\Pole.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" /><circle
+       style="fill:#cbd8f6;fill-opacity:1;stroke:#000000;stroke-width:0.63762;stroke-dasharray:none;stroke-opacity:1"
+       id="circle341"
+       cx="4228.5864"
+       cy="1588.1965"
+       r="104.58761" /><circle
+       style="fill:#831961;fill-opacity:1;stroke:#000000;stroke-width:0.288655;stroke-dasharray:none;stroke-opacity:1"
+       id="circle342"
+       cx="4228.5864"
+       cy="1588.1965"
+       r="47.347507" /><rect
+       style="fill:#252246;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
+       id="rect342"
+       width="154.16107"
+       height="83.815727"
+       x="4175.8188"
+       y="1279.6865"
+       rx="5.6041374"
+       ry="6.233016" /><path
+       sodipodi:type="star"
+       style="fill:#252246;fill-opacity:1;stroke:none;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
+       id="path342"
+       inkscape:flatsided="false"
+       sodipodi:sides="6"
+       sodipodi:cx="4362.1592"
+       sodipodi:cy="2078.1809"
+       sodipodi:r1="13.758333"
+       sodipodi:r2="5.2281666"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.3089969"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 4371.8878,2087.9095 -8.3755,-4.6786 -4.914,8.2395 -0.136,-9.5926 -9.5926,-0.136 8.2395,-4.914 -4.6786,-8.3755 8.3754,4.6786 4.9141,-8.2395 0.136,9.5926 9.5926,0.136 -8.2395,4.9141 z"
+       inkscape:export-filename="EditorUI\EnemyPositionMarker.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" /><rect
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.03759;stroke-dasharray:none;stroke-opacity:1"
+       id="rect343"
+       width="104.79575"
+       height="104.79575"
+       x="3915.7073"
+       y="1910.2627"
+       rx="3.7242918"
+       ry="4.14222"
+       inkscape:export-filename="Enemy\ToastyHit.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" /><path
+       style="fill:#cbd8f6;fill-opacity:1;stroke:#000000;stroke-width:3.10016;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3942.5543,2000.5465 c 0,11.2757 38.2315,0.039 38.2315,0.039 l 7.8614,-35.3102 -11.0325,-35.6126 c 0,0 -35.0604,-11.0073 -35.0604,1.7033 v 35.7365 z"
+       id="path343"
+       sodipodi:nodetypes="scccsss" /><path
+       style="fill:#ba2f4a;fill-opacity:1;stroke:#000000;stroke-width:2.01631;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3975.4581,1993.9195 c 8.0727,3.2358 4.4338,1.0664 6.6506,1.5995 l 2.8096,-16.3213 -6.9274,-1.9088 -10.4077,1.8878 z"
+       id="path344"
+       sodipodi:nodetypes="cccccc" /><path
+       style="fill:#ba2f4a;fill-opacity:1;stroke:#000000;stroke-width:1.5089;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3978.0988,1951.891 7.2899,-0.8516 -4.9437,-15.4556 -3.9457,1.8039 -9.3993,10.3534 z"
+       id="path345"
+       sodipodi:nodetypes="cccccc" /><path
+       style="fill:#ba2f4a;fill-opacity:1;stroke:#000000;stroke-width:3.10016;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3955.228,1929.682 -0.3916,-8.7598 6.7595,-0.9605 0.859,9.3971 z"
+       id="path346" /><path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.914703;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3966.2864,1996.684 -0.4383,-62.2567 -4.0555,0.8769 1.9729,61.051 z"
+       id="path347" /><path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.914703;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3960.8061,1996.684 -0.4384,-62.2567 -4.0555,0.8769 1.973,61.051 z"
+       id="path348" /><path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.914703;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3981.7726,1976.8163 c 1.3951,0 6.6654,0 6.6654,0 l -2.3252,-2.4801 c 0,0 6.3553,-0.775 6.0454,-1.3951 -0.3101,-0.62 -4.1853,-2.9451 -4.1853,-2.9451 l 5.4253,-2.9451 -5.2703,-2.1702 6.2003,-4.3402 -6.5103,-3.4102 4.6502,-3.1001 -14.4157,-0.62 4.4953,4.4952 -4.0303,0.31 5.8904,5.5803 -5.7353,0.465 5.7353,6.5104 -5.7353,0.3099 3.5651,3.2552 -1.7051,1.3951 z"
+       id="path349" /><path
+       style="fill:none;fill-opacity:1;stroke:#caa857;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3974.0987,1986.617 5.987,-5.2385 0.3741,7.4836"
+       id="path350" /><path
+       style="fill:none;fill-opacity:1;stroke:#caa857;stroke-width:1.56131;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3974.7602,1943.1197 5.987,5.2385 0.3741,-7.4836"
+       id="path351" /></g></svg>

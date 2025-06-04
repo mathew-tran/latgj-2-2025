@@ -2,6 +2,9 @@ extends Resource
 
 class_name EnemyBehaviour
 
+func GetName():
+	return "NAME"
+	
 func Setup():
 	pass
 	

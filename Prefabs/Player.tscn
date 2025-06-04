@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ckwjpw38i8rea"]
+[gd_scene load_steps=14 format=3 uid="uid://ckwjpw38i8rea"]
 
 [ext_resource type="Texture2D" uid="uid://cp1scwing4rtl" path="res://Art/Character/Player.png" id="1_um8lo"]
 [ext_resource type="Script" uid="uid://cfeil3j8bfer1" path="res://Scripts/Player.gd" id="1_x3d5u"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://wfet8n3t44uv" path="res://HealthComponent.gd" id="4_shmu5"]
 [ext_resource type="Texture2D" uid="uid://i1hks608wcnn" path="res://Art/Hands/RegularGloveOffhand.png" id="4_vxq8l"]
 [ext_resource type="Texture2D" uid="uid://c5r83gpebyl51" path="res://Art/Particles/BubbleEffect.png" id="6_gg3t4"]
+[ext_resource type="Texture2D" uid="uid://38yvx162ksc" path="res://Art/Character/PlayerHurt.png" id="7_javds"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b43ah"]
 radius = 66.0681
@@ -16,6 +17,43 @@ point_count = 3
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gg3t4"]
 radius = 63.0317
+
+[sub_resource type="Animation" id="Animation_3ygst"]
+resource_name = "hit"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("7_javds"), ExtResource("1_um8lo")]
+}
+
+[sub_resource type="Animation" id="Animation_lhekp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_um8lo")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t8lmw"]
+_data = {
+&"RESET": SubResource("Animation_lhekp"),
+&"hit": SubResource("Animation_3ygst")
+}
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 self_modulate = Color(1.2, 10, 1.2, 1)
@@ -37,7 +75,8 @@ scale = Vector2(1, -1)
 texture = ExtResource("4_vxq8l")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.9, 0.9)
+zoom = Vector2(0.67, 0.67)
+position_smoothing_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_b43ah")
@@ -67,6 +106,11 @@ collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 shape = SubResource("CircleShape2D_gg3t4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_t8lmw")
+}
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
