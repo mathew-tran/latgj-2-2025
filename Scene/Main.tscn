@@ -1,40 +1,30 @@
-[gd_scene load_steps=5 format=3 uid="uid://bbrr2wswji1br"]
+[gd_scene load_steps=7 format=3 uid="uid://bbrr2wswji1br"]
 
 [ext_resource type="Texture2D" uid="uid://dajfvqi5rswl" path="res://Art/Field/Playfield.png" id="1_g6ejq"]
 [ext_resource type="PackedScene" uid="uid://ckwjpw38i8rea" path="res://Prefabs/Player.tscn" id="1_xhtwi"]
-[ext_resource type="PackedScene" uid="uid://b1ogo8a5bckpl" path="res://Prefabs/Enemies/Spikey.tscn" id="2_djkur"]
+[ext_resource type="PackedScene" uid="uid://b1ogo8a5bckpl" path="res://Prefabs/Enemies/Toasty.tscn" id="2_djkur"]
 [ext_resource type="Script" uid="uid://degwtpckpuf3m" path="res://Scripts/ComboUI.gd" id="4_h175a"]
+[ext_resource type="PackedScene" uid="uid://de4py1wnvgc00" path="res://Prefabs/HealthUI.tscn" id="5_togfq"]
+[ext_resource type="Script" uid="uid://laq2kjtpqwci" path="res://Scripts/EnemyHealthContainerUI.gd" id="6_aan6j"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_g6ejq")
 
+[node name="BulletGroup" type="Node2D" parent="." groups=["Bullets"]]
+
 [node name="Spikey" parent="." instance=ExtResource("2_djkur")]
+position = Vector2(196, -297)
 
 [node name="Spikey2" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(-28, -116)
+position = Vector2(-322, -464)
 
 [node name="Spikey3" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(-59, 141)
+position = Vector2(559, 372)
 
 [node name="Spikey4" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(683, -259)
-
-[node name="Spikey5" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(496, 227)
-
-[node name="Spikey6" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(-437, -389)
-
-[node name="Spikey7" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(-610, 220)
-
-[node name="Spikey8" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(471, -99)
-
-[node name="Spikey9" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(191, -346)
+position = Vector2(701, -406)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_xhtwi")]
 position = Vector2(-341, -18)
@@ -57,3 +47,15 @@ theme_override_font_sizes/font_size = 50
 text = "1213132231"
 horizontal_alignment = 1
 script = ExtResource("4_h175a")
+
+[node name="HealthUI" parent="CanvasLayer" instance=ExtResource("5_togfq")]
+bIsPlayer = true
+
+[node name="EnemyHealthContainer" type="VBoxContainer" parent="CanvasLayer" groups=["EnemyHealthContainer"]]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -186.0
+offset_bottom = 193.0
+grow_horizontal = 0
+script = ExtResource("6_aan6j")

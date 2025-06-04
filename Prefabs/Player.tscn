@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ckwjpw38i8rea"]
+[gd_scene load_steps=10 format=3 uid="uid://ckwjpw38i8rea"]
 
 [ext_resource type="Texture2D" uid="uid://cp1scwing4rtl" path="res://Art/Character/Player.png" id="1_um8lo"]
 [ext_resource type="Script" uid="uid://cfeil3j8bfer1" path="res://Scripts/Player.gd" id="1_x3d5u"]
@@ -13,6 +13,9 @@ radius = 66.0681
 [sub_resource type="Curve" id="Curve_javds"]
 _data = [Vector2(0.107955, 0), 0.0, 0.0, 0, 0, Vector2(0.3125, 0.865169), 0.0, 0.0, 0, 0, Vector2(1, 0.0337079), 0.0, 0.0, 0, 0]
 point_count = 3
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gg3t4"]
+radius = 63.0317
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 self_modulate = Color(1.2, 10, 1.2, 1)
@@ -59,4 +62,11 @@ gravity = Vector2(0, 0)
 scale_amount_min = 0.5
 scale_amount_curve = SubResource("Curve_javds")
 
+[node name="Hitbox" type="Area2D" parent="."]
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CircleShape2D_gg3t4")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

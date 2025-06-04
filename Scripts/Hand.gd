@@ -27,6 +27,7 @@ func Use(attack : ATTACK, speed = 1.0, damage = 2, knockback = 600):
 		ATTACK.BLOCK:
 			$AnimationPlayer.play("defend")
 	await $AnimationPlayer.animation_finished
+	
 	Complete.emit()
 	
 
@@ -36,5 +37,9 @@ func HitEnemies():
 		enemy.get_parent().Hit(Damage, self, Knockback)
 		$hitAnim.stop()
 		$hitAnim.play("hit")
-
 		
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body is Bullet:
+		if body.bEnabled:
+			body.queue_free()

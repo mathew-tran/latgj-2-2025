@@ -16,6 +16,9 @@ var CurrentState = STATE.IDLE
 var ComboMax = 6
 signal OnComboStringChange(comboString)
 
+func GetHealthComponent() -> HealthComponent:
+	return $HealthComponent
+	
 func _ready() -> void:
 	await get_tree().process_frame
 	ClearCommand()
@@ -27,7 +30,7 @@ func SetIdle():
 	CurrentState = STATE.IDLE
 	
 func _process(delta: float) -> void:
-	velocity *= .88
+	velocity *= .92
 	move_and_slide()
 	look_at(get_global_mouse_position())
 	
@@ -119,6 +122,13 @@ func ExecuteCommand():
 		await UseLeft(Fist.ATTACK.STRAIGHT, 2)
 		await UseLeft(Fist.ATTACK.JAB, 2)
 		SetIdle()
+	elif CommandList == "LLLLLL":
+		await UseLeft(Fist.ATTACK.JAB, 2)
+		await UseLeft(Fist.ATTACK.JAB, 4)
+		await UseLeft(Fist.ATTACK.JAB, 6)
+		await UseLeft(Fist.ATTACK.JAB, 8)
+		await UseLeft(Fist.ATTACK.JAB, 10)
+		SetIdle()
 	elif CommandList == "RRR":
 		await UseRight(Fist.ATTACK.STRAIGHT, 2)
 		await UseRight(Fist.ATTACK.STRAIGHT, 3)
@@ -127,7 +137,7 @@ func ExecuteCommand():
 		SetIdle()
 	elif CommandList == "LLR":
 		velocity += Vector2.RIGHT.rotated(rotation) * 1500
-		await UseRight(Fist.ATTACK.STRAIGHT, 2, 5, 4000)
+		await UseRight(Fist.ATTACK.STRAIGHT, 2, 12, 4000)
 		SetIdle()		
 	elif CommandList == "LLRL":
 		await UseLeft(Fist.ATTACK.JAB, 3, 1)
@@ -268,3 +278,13 @@ func ClearCommand():
 func _on_timer_timeout() -> void:
 	ClearCommand()
 	
+
+
+func _on_hitbox_body_entered(body: Node2D) -> void:
+	if body is Bullet:
+		if body.bEnabled == false:
+			return
+	$HealthComponent.TakeDamage(3)
+	
+	if body is Bullet:
+		body.queue_free()
