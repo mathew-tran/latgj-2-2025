@@ -11,12 +11,10 @@ var StartPosition = Vector2.ZERO
 var MidPosition = Vector2(50, 0)
 var EndPosition = Vector2(75, 0)
 
+signal ShotComplete
+
 func _ready() -> void:
-	await get_tree().process_frame
-	for x in range(0, 3):
-		await Shoot(1)
-		await Shoot(1)
-		await Shoot(1)
+	pass
 	
 func Shoot(speed = 1.0):
 	if CurrentState == STATE.SHOOTING:
@@ -36,5 +34,6 @@ func Shoot(speed = 1.0):
 		BulletInstance.reparent(Finder.GetBulletGroup())
 		BulletInstance.Shoot()
 	
+	ShotComplete.emit()
 	
 	

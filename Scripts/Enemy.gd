@@ -6,6 +6,9 @@ class_name Enemy
 
 var bIsActivated = false
 
+var MoveSpeed = 1600
+var RunSpeed = 4800
+
 func GetHealthComponent():
 	return $HealthComponent
 	
@@ -22,11 +25,14 @@ func Hit(damage, hitObject, knockback):
 	$CPUParticles2D.global_position = lerp(hitObject.global_position, global_position, .8)
 	$CPUParticles2D.emitting = true
 
+func Shoot(speed):
+	$Cannon.Shoot(speed)
+	await $Cannon.ShotComplete
+	
 func _process(delta: float) -> void:
 	if bIsActivated:
 		velocity *= .75
 		move_and_slide()		
-		look_at(Finder.GetPlayer().global_position)
 
 func _on_health_component_on_death() -> void:
 	await get_tree().create_timer(.1).timeout

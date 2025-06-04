@@ -1,9 +1,31 @@
-[gd_scene load_steps=10 format=3 uid="uid://b1ogo8a5bckpl"]
+[gd_scene load_steps=17 format=3 uid="uid://b1ogo8a5bckpl"]
 
 [ext_resource type="Script" uid="uid://iyni07i4mwid" path="res://Scripts/Enemy.gd" id="1_w3icy"]
 [ext_resource type="PackedScene" uid="uid://qim86jss2s4y" path="res://Prefabs/Cannon.tscn" id="2_2l16u"]
 [ext_resource type="Script" uid="uid://wfet8n3t44uv" path="res://HealthComponent.gd" id="2_dvw5c"]
 [ext_resource type="Texture2D" uid="uid://ctkpj41hysdiy" path="res://Art/Enemy/Toasty.png" id="2_w3icy"]
+[ext_resource type="Script" uid="uid://d0hab6mkkp31v" path="res://Scripts/EnemyBrain.gd" id="2_xc4hd"]
+[ext_resource type="Script" uid="uid://5mi46ijyxaq0" path="res://Scripts/Content/EnemyBehaviour.gd" id="3_f8d0y"]
+[ext_resource type="Script" uid="uid://dlu7w55o0qo1h" path="res://Scripts/Content/EnemyMoveBehaviour.gd" id="4_nut3w"]
+[ext_resource type="Script" uid="uid://dggao2aqlonxr" path="res://Scripts/Content/EnemyShootBehaviour.gd" id="5_u2u6a"]
+
+[sub_resource type="Resource" id="Resource_u2u6a"]
+script = ExtResource("4_nut3w")
+MovePosition = 0
+bIsRunning = true
+metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
+
+[sub_resource type="Resource" id="Resource_nut3w"]
+script = ExtResource("4_nut3w")
+MovePosition = 1
+bIsRunning = true
+metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
+
+[sub_resource type="Resource" id="Resource_oiv7f"]
+script = ExtResource("5_u2u6a")
+AmountOfShots = 3
+FireRate = 0.2
+metadata/_custom_type_script = "uid://dggao2aqlonxr"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bmyd0"]
 size = Vector2(308, 186)
@@ -48,9 +70,15 @@ _data = {
 &"hit": SubResource("Animation_w3icy")
 }
 
-[node name="Toasty" type="CharacterBody2D"]
+[node name="Toasty" type="CharacterBody2D" groups=["Enemy"]]
+collision_layer = 0
+collision_mask = 0
 script = ExtResource("1_w3icy")
 Name = "Toasty"
+
+[node name="Brain" type="Node" parent="."]
+script = ExtResource("2_xc4hd")
+AttackPattern1 = Array[ExtResource("3_f8d0y")]([SubResource("Resource_u2u6a"), SubResource("Resource_nut3w"), SubResource("Resource_oiv7f")])
 
 [node name="Cannon" parent="." instance=ExtResource("2_2l16u")]
 position = Vector2(10, 13)
@@ -65,7 +93,7 @@ shape = SubResource("RectangleShape2D_bmyd0")
 
 [node name="HealthComponent" type="Node" parent="."]
 script = ExtResource("2_dvw5c")
-MaxHealth = 30
+MaxHealth = 50
 
 [node name="Hitbox" type="Area2D" parent="."]
 collision_mask = 2

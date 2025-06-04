@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bbrr2wswji1br"]
+[gd_scene load_steps=12 format=3 uid="uid://bbrr2wswji1br"]
 
 [ext_resource type="Texture2D" uid="uid://dajfvqi5rswl" path="res://Art/Field/Playfield.png" id="1_g6ejq"]
+[ext_resource type="Script" uid="uid://d2a0kp8c23bp" path="res://Scripts/Game.gd" id="1_vm4ek"]
 [ext_resource type="PackedScene" uid="uid://ckwjpw38i8rea" path="res://Prefabs/Player.tscn" id="1_xhtwi"]
 [ext_resource type="PackedScene" uid="uid://b1ogo8a5bckpl" path="res://Prefabs/Enemies/Toasty.tscn" id="2_djkur"]
 [ext_resource type="Script" uid="uid://degwtpckpuf3m" path="res://Scripts/ComboUI.gd" id="4_h175a"]
@@ -8,8 +9,11 @@
 [ext_resource type="Script" uid="uid://laq2kjtpqwci" path="res://Scripts/EnemyHealthContainerUI.gd" id="6_aan6j"]
 [ext_resource type="PackedScene" uid="uid://cpjvqam4wop2a" path="res://Prefabs/Pole.tscn" id="7_h3nmf"]
 [ext_resource type="PackedScene" uid="uid://bper63aev0v7w" path="res://Prefabs/Ropes.tscn" id="7_hueuk"]
+[ext_resource type="Texture2D" uid="uid://ped5bjbtsyk8" path="res://Art/EditorUI/EnemyPositionMarker.png" id="9_6a8me"]
+[ext_resource type="Script" uid="uid://bitsd5mwlgbkn" path="res://Scripts/EnemyPositions.gd" id="9_yg4ot"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Game" type="Node2D" groups=["Game"]]
+script = ExtResource("1_vm4ek")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_g6ejq")
@@ -86,3 +90,13 @@ position = Vector2(-946, -698)
 
 [node name="StaticBody2D4" parent="." instance=ExtResource("7_h3nmf")]
 position = Vector2(946, -698)
+
+[node name="EnemyPositions" type="Node2D" parent="." groups=["EnemyPositions"]]
+script = ExtResource("9_yg4ot")
+
+[node name="Middle" type="Sprite2D" parent="EnemyPositions"]
+texture = ExtResource("9_6a8me")
+
+[node name="Left" type="Sprite2D" parent="EnemyPositions"]
+position = Vector2(-700, 8)
+texture = ExtResource("9_6a8me")
