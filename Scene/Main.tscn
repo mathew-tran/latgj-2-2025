@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bbrr2wswji1br"]
+[gd_scene load_steps=5 format=3 uid="uid://bbrr2wswji1br"]
 
 [ext_resource type="Texture2D" uid="uid://dajfvqi5rswl" path="res://Art/Field/Playfield.png" id="1_g6ejq"]
 [ext_resource type="PackedScene" uid="uid://ckwjpw38i8rea" path="res://Prefabs/Player.tscn" id="1_xhtwi"]
 [ext_resource type="PackedScene" uid="uid://b1ogo8a5bckpl" path="res://Prefabs/Enemies/Spikey.tscn" id="2_djkur"]
+[ext_resource type="Script" uid="uid://degwtpckpuf3m" path="res://Scripts/ComboUI.gd" id="4_h175a"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -37,3 +38,22 @@ position = Vector2(191, -346)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_xhtwi")]
 position = Vector2(-341, -18)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Combo" type="Label" parent="CanvasLayer"]
+custom_minimum_size = Vector2(400, 0)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -23.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 50
+text = "1213132231"
+horizontal_alignment = 1
+script = ExtResource("4_h175a")

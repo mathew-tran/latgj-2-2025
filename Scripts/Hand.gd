@@ -36,4 +36,5 @@ func HitEnemies():
 		enemy.get_parent().Hit(Damage, self, Knockback)
 		$hitAnim.stop()
 		$hitAnim.play("hit")
+
 		

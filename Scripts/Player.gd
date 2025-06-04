@@ -13,6 +13,13 @@ enum STATE {
 
 var CurrentState = STATE.IDLE
 
+var ComboMax = 6
+signal OnComboStringChange(comboString)
+
+func _ready() -> void:
+	await get_tree().process_frame
+	ClearCommand()
+	
 func SetAttacking():
 	CurrentState = STATE.ATTACKING
 
@@ -41,7 +48,10 @@ func _process(delta: float) -> void:
 	
 	var bCommandAdded = false
 	if IsAttacking() == false:
-		if Input.is_action_just_released("Block"):
+		if Input.is_action_just_released("Roll"):
+			CommandList += "D"
+			bCommandAdded = true	
+		elif Input.is_action_just_released("Block"):
 			CommandList += "B"	
 			bCommandAdded = true
 		elif Input.is_action_just_released("Left_Punch") and Input.is_action_just_released("Right_Punch"):
@@ -55,6 +65,7 @@ func _process(delta: float) -> void:
 			bCommandAdded = true
 	
 	if bCommandAdded:
+		OnComboStringChange.emit(CommandList)
 		print(CommandList)
 		ExecuteCommand()
 		$Timer.start()
@@ -88,6 +99,21 @@ func ExecuteCommand():
 		UseLeft()
 		await UseRight()
 		SetIdle()		
+	elif CommandList == "DL":
+		velocity -= Vector2.RIGHT.rotated(rotation) * 1000
+		UseRight(Fist.ATTACK.STRAIGHT)
+		await UseLeft(Fist.ATTACK.STRAIGHT)
+		UseRight(Fist.ATTACK.STRAIGHT, 2)
+		await UseLeft(Fist.ATTACK.STRAIGHT, 2)
+		SetIdle()
+	elif CommandList == "DR":
+		await UseRight(Fist.ATTACK.STRAIGHT, 5)
+		await UseLeft(Fist.ATTACK.STRAIGHT, 5)
+		await UseRight(Fist.ATTACK.JAB, 3)
+		await UseLeft(Fist.ATTACK.JAB, 3)
+		await UseRight(Fist.ATTACK.STRAIGHT, 2)
+		await UseLeft(Fist.ATTACK.JAB, 2)
+		SetIdle()
 	elif CommandList == "LLL":
 		await UseLeft(Fist.ATTACK.JAB, 2)
 		await UseLeft(Fist.ATTACK.STRAIGHT, 2)
@@ -200,6 +226,16 @@ func ExecuteCommand():
 		UseRight(Fist.ATTACK.BLOCK)
 		await UseLeft(Fist.ATTACK.BLOCK)
 		SetIdle()
+	elif CommandList.ends_with("DB"):
+		velocity -= Vector2.RIGHT.rotated(rotation) * 1500
+		UseRight(Fist.ATTACK.BLOCK)
+		await UseLeft(Fist.ATTACK.BLOCK)
+		SetIdle()
+	elif CommandList.ends_with("BD"):
+		velocity += Vector2.RIGHT.rotated(rotation) * 1500
+		UseRight(Fist.ATTACK.BLOCK)
+		await UseLeft(Fist.ATTACK.BLOCK)
+		SetIdle()
 	elif CommandList.ends_with("R"):
 		await UseRight()
 		SetIdle()
@@ -210,11 +246,25 @@ func ExecuteCommand():
 		UseRight(Fist.ATTACK.BLOCK)
 		await UseLeft(Fist.ATTACK.BLOCK)
 		SetIdle()
-	if CommandList.length() > 5:
+	elif CommandList.ends_with("DD"):
+		velocity += Vector2.RIGHT.rotated(rotation) * 2000
+		SetAttacking()
+		await get_tree().create_timer(.4).timeout
+		SetIdle()
 		ClearCommand()
-
+	elif CommandList.ends_with("D"):
+		velocity += Vector2.RIGHT.rotated(rotation) * 1000
+		await get_tree().create_timer(.4).timeout
+		SetAttacking()
+		SetIdle()
+	if CommandList.length() >= ComboMax:
+		ClearCommand()
+	
 func ClearCommand():
 	CommandList = ""
+	$ResetParticle.emitting = true
+	OnComboStringChange.emit(CommandList)
 	
 func _on_timer_timeout() -> void:
 	ClearCommand()
+	
