@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bbrr2wswji1br"]
+[gd_scene load_steps=13 format=3 uid="uid://bbrr2wswji1br"]
 
 [ext_resource type="Texture2D" uid="uid://dajfvqi5rswl" path="res://Art/Field/Playfield.png" id="1_g6ejq"]
 [ext_resource type="Script" uid="uid://d2a0kp8c23bp" path="res://Scripts/Game.gd" id="1_vm4ek"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://laq2kjtpqwci" path="res://Scripts/EnemyHealthContainerUI.gd" id="6_aan6j"]
 [ext_resource type="PackedScene" uid="uid://cpjvqam4wop2a" path="res://Prefabs/Pole.tscn" id="7_h3nmf"]
 [ext_resource type="PackedScene" uid="uid://bper63aev0v7w" path="res://Prefabs/Ropes.tscn" id="7_hueuk"]
+[ext_resource type="Script" uid="uid://xu0jnsabwqvj" path="res://Scripts/PointsLabel.gd" id="8_4qtod"]
 [ext_resource type="Texture2D" uid="uid://ped5bjbtsyk8" path="res://Art/EditorUI/EnemyPositionMarker.png" id="9_6a8me"]
 [ext_resource type="Script" uid="uid://bitsd5mwlgbkn" path="res://Scripts/EnemyPositions.gd" id="9_yg4ot"]
 
@@ -26,6 +27,21 @@ position = Vector2(-341, -18)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 45.0
+grow_horizontal = 2
+
+[node name="Panel2" type="Panel" parent="CanvasLayer"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+
 [node name="Combo" type="Label" parent="CanvasLayer"]
 custom_minimum_size = Vector2(400, 0)
 anchors_preset = 7
@@ -33,12 +49,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -100.0
-offset_top = -23.0
-offset_right = 100.0
+offset_left = -200.0
+offset_top = -41.0
+offset_right = 200.0
+offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 35
 text = "1213132231"
 horizontal_alignment = 1
 script = ExtResource("4_h175a")
@@ -54,6 +71,20 @@ offset_left = -186.0
 offset_bottom = 193.0
 grow_horizontal = 0
 script = ExtResource("6_aan6j")
+
+[node name="PointsLabel" type="Label" parent="CanvasLayer"]
+custom_minimum_size = Vector2(330, 0)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -165.0
+offset_right = 165.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "000000"
+horizontal_alignment = 1
+script = ExtResource("8_4qtod")
 
 [node name="Ropes" parent="." instance=ExtResource("7_hueuk")]
 position = Vector2(946, -18)

@@ -13,7 +13,7 @@ func _ready() -> void:
 	RefHealthComponent.OnTakeDamage.connect(OnTakeDamage)
 	RefHealthComponent.OnDeath.connect(OnDeath)
 	
-	$ProgressBar/Label.text = Name
+	$ProgressBar/Label.text = Name.to_upper()
 	UpdateHealthBar()
 	
 func UpdateHealthBar():
@@ -31,8 +31,9 @@ func OnTakeDamage(amount):
 func OnDeath():
 	$ProgressBar/Label.text = "DEAD"
 	UpdateHealthBar()
-	$AnimationPlayer.stop()
-	$AnimationPlayer.play("dead")
+
 	if bIsPlayer == false:
+		$AnimationPlayer.stop()
+		$AnimationPlayer.play("dead")
 		await $AnimationPlayer.animation_finished
 		queue_free()

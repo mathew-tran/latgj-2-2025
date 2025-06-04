@@ -19,6 +19,10 @@ func GetCurrentBehaviour() -> EnemyBehaviour:
 	return CurrentPattern[BehaviourIndex]
 	
 func _process(delta: float) -> void:
+	if EnemyRef.GetHealthComponent().IsAlive() == false:
+		return
+	if EnemyRef.bCanMove == false:
+		return
 	if GetCurrentBehaviour().CanRun():
 		GetCurrentBehaviour().Run(delta)
 	else:

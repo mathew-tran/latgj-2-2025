@@ -5,12 +5,14 @@ class_name Enemy
 @export var Name = ""
 
 var bIsActivated = false
-
+var bCanMove = true
 var MoveSpeed = 1600
 var RunSpeed = 4800
 
 @export var NormalTexture : Texture2D
 @export var HitTexture : Texture2D
+@export var DeathTexture : Texture2D
+@export var KillXP = 500
 
 func GetHealthComponent():
 	return $HealthComponent
@@ -21,19 +23,39 @@ func _ready() -> void:
 	Finder.GetEnemyHealthContainer().RegisterEnemy(self)
 	
 func ShowHitSprite():
-	$Sprite2D.texture = HitTexture
+	if $HealthComponent.IsAlive():
+		$Sprite2D.texture = HitTexture
 
 func ShowRegularSprite():
-	$Sprite2D.texture = NormalTexture
+	if $HealthComponent.IsAlive():
+		$Sprite2D.texture = NormalTexture
 	
 func Hit(damage, hitObject, knockback):
+	if $HealthComponent.IsAlive() == false:
+		return
 	$HealthComponent.TakeDamage(damage)
 	var direction = (global_position - hitObject.global_position).normalized()
-	velocity += direction * knockback
+	
+	var modifier = 1
+	var knockbackmodifier = 0
+	if $HealthComponent.CurrentHealth <= 0:
+		modifier *= 10
+		knockbackmodifier = 500
+		rotation_degrees += randf_range(0, 360)
+	velocity += direction * (knockback + knockbackmodifier) * modifier
+	
+	if damage > 5:
+		Finder.GetGame().Slomo(.2, .5)
 	
 	$HitAnim.play("hit")
 	$CPUParticles2D.global_position = lerp(hitObject.global_position, global_position, .8)
 	$CPUParticles2D.emitting = true
+	Finder.GetGame().AddPoints(damage * 5)
+	$HitParticle.emitting = true
+	
+	if knockback > 800:
+		bCanMove = false
+		$HitTimer.start()
 
 func Shoot(speed):
 	$Cannon.Shoot(speed)
@@ -45,5 +67,23 @@ func _process(delta: float) -> void:
 		move_and_slide()		
 
 func _on_health_component_on_death() -> void:
+	$HitAnim.stop()
+	$HitParticle.amount += 30
+	$HitParticle.emitting = true
 	await get_tree().create_timer(.1).timeout
+	$Sprite2D.texture = DeathTexture
+	await get_tree().create_timer(.3).timeout
+	
+	
+	Finder.GetGame().AddPoints(KillXP)
+	
+	await get_tree().create_timer(.5).timeout
+	var tween = get_tree().create_tween()
+	tween.tween_property(self, "scale", Vector2.ZERO, .3)
+	
+	await tween.finished
 	queue_free()
+
+
+func _on_timer_timeout() -> void:
+	bCanMove = true

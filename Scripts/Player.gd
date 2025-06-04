@@ -36,9 +36,11 @@ func OnDeath():
 	$RightHand.scale = Vector2(-1,1)
 	$LeftHand.rotation_degrees = randf_range(-90, 90)
 	$Head.texture = load("res://Art/Character/PlayerDead.png")
+	$AnimationPlayer.play("death")
 	
 func OnTakeDamage(amount):
 	$AnimationPlayer.play("hit")
+	$HitParticle.emitting = true
 	
 func SetAttacking():
 	CurrentState = STATE.ATTACKING
@@ -144,17 +146,20 @@ func ExecuteCommand():
 		await UseLeft(Fist.ATTACK.JAB, 2)
 		SetIdle()
 	elif CommandList == "LLLLLL":
-		await UseLeft(Fist.ATTACK.JAB, 2)
-		await UseLeft(Fist.ATTACK.JAB, 4)
-		await UseLeft(Fist.ATTACK.JAB, 6)
-		await UseLeft(Fist.ATTACK.JAB, 8)
-		await UseLeft(Fist.ATTACK.JAB, 10)
+		await UseLeft(Fist.ATTACK.JAB, 2, 0)
+		await UseLeft(Fist.ATTACK.JAB, 4, 0)
+		await UseLeft(Fist.ATTACK.JAB, 6, 0)
+		await UseLeft(Fist.ATTACK.JAB, 8, 0)
+		var tween = get_tree().create_tween()
+		tween.tween_property(self, "rotation_degrees", rotation_degrees + 360, .2)
+		await tween.finished
+		await UseLeft(Fist.ATTACK.JAB, 1, 12, 4000)
 		SetIdle()
 	elif CommandList == "RRR":
 		await UseRight(Fist.ATTACK.STRAIGHT, 2)
 		await UseRight(Fist.ATTACK.STRAIGHT, 3)
 		velocity += Vector2.RIGHT.rotated(rotation) * 1500
-		await UseRight(Fist.ATTACK.STRAIGHT, 1, 4)
+		await UseRight(Fist.ATTACK.STRAIGHT, 1)
 		SetIdle()
 	elif CommandList == "LLR":
 		velocity += Vector2.RIGHT.rotated(rotation) * 1500
@@ -305,9 +310,12 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body is Bullet:
 		if body.bEnabled == false:
 			return
+	if $HealthComponent.IsAlive() == false:
+		return
 	$HealthComponent.TakeDamage(3)
+	Finder.GetGame().AddPoints(100)
 	var direction = (global_position - body.global_position).normalized()
 	velocity += direction * 1200
-	
+	Finder.GetGame().Slomo(.2, .5)
 	if body is Bullet:
 		body.queue_free()

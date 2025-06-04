@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ckwjpw38i8rea"]
+[gd_scene load_steps=16 format=3 uid="uid://ckwjpw38i8rea"]
 
 [ext_resource type="Texture2D" uid="uid://cp1scwing4rtl" path="res://Art/Character/Player.png" id="1_um8lo"]
 [ext_resource type="Script" uid="uid://cfeil3j8bfer1" path="res://Scripts/Player.gd" id="1_x3d5u"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://i1hks608wcnn" path="res://Art/Hands/RegularGloveOffhand.png" id="4_vxq8l"]
 [ext_resource type="Texture2D" uid="uid://c5r83gpebyl51" path="res://Art/Particles/BubbleEffect.png" id="6_gg3t4"]
 [ext_resource type="Texture2D" uid="uid://38yvx162ksc" path="res://Art/Character/PlayerHurt.png" id="7_javds"]
+[ext_resource type="Texture2D" uid="uid://blb13px1xnufk" path="res://Art/Projectiles/Star.png" id="8_3ygst"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b43ah"]
 radius = 66.0681
@@ -48,10 +49,39 @@ tracks/0/keys = {
 "update": 1,
 "values": [ExtResource("1_um8lo")]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:zoom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.67, 0.67)]
+}
+
+[sub_resource type="Animation" id="Animation_t8lmw"]
+resource_name = "death"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera2D:zoom")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 20),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.67, 0.67), Vector2(0.4, 0.4)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_t8lmw"]
 _data = {
 &"RESET": SubResource("Animation_lhekp"),
+&"death": SubResource("Animation_t8lmw"),
 &"hit": SubResource("Animation_3ygst")
 }
 
@@ -111,6 +141,20 @@ shape = SubResource("CircleShape2D_gg3t4")
 libraries = {
 &"": SubResource("AnimationLibrary_t8lmw")
 }
+
+[node name="HitParticle" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 5
+texture = ExtResource("8_3ygst")
+lifetime = 0.3
+one_shot = true
+explosiveness = 1.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 300.0
+initial_velocity_max = 300.0
+scale_amount_min = 0.0
+scale_amount_max = 0.8
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

@@ -21,6 +21,7 @@ func _ready() -> void:
 	
 func Setup():
 	CurrentHealth = MaxHealth	
+	CurrentState = STATE.ALIVE
 	
 	await get_tree().process_frame
 	OnSetup.emit()
@@ -37,3 +38,5 @@ func TakeDamage(amount):
 		OnDeath.emit()
 		CurrentState = STATE.DEAD
 	
+func IsAlive():
+	return CurrentState == STATE.ALIVE

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://clt44t6vbu2n" path="res://Scripts/HealthUI.gd" id="1_7sjla"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h175a"]
+bg_color = Color(0.0728426, 0.0728426, 0.0728426, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_togfq"]
 bg_color = Color(0.729412, 0.184314, 0.290196, 1)

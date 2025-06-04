@@ -15,6 +15,9 @@ enum POSITIONS {
 	PLAYER
 }
 
+func _init() -> void:
+	visible = false
+	
 func GetPosition(pos : POSITIONS):
 	match pos:
 		POSITIONS.MIDDLE:
