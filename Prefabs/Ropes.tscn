@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bper63aev0v7w"]
+
+[ext_resource type="Texture2D" uid="uid://cav3og4ihdw1i" path="res://Art/Field/Ropes.png" id="1_7t6u4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wsav5"]
+size = Vector2(100, 1500)
+
+[node name="Ropes" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7t6u4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wsav5")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bbrr2wswji1br"]
+[gd_scene load_steps=9 format=3 uid="uid://bbrr2wswji1br"]
 
 [ext_resource type="Texture2D" uid="uid://dajfvqi5rswl" path="res://Art/Field/Playfield.png" id="1_g6ejq"]
 [ext_resource type="PackedScene" uid="uid://ckwjpw38i8rea" path="res://Prefabs/Player.tscn" id="1_xhtwi"]
@@ -6,6 +6,8 @@
 [ext_resource type="Script" uid="uid://degwtpckpuf3m" path="res://Scripts/ComboUI.gd" id="4_h175a"]
 [ext_resource type="PackedScene" uid="uid://de4py1wnvgc00" path="res://Prefabs/HealthUI.tscn" id="5_togfq"]
 [ext_resource type="Script" uid="uid://laq2kjtpqwci" path="res://Scripts/EnemyHealthContainerUI.gd" id="6_aan6j"]
+[ext_resource type="PackedScene" uid="uid://cpjvqam4wop2a" path="res://Prefabs/Pole.tscn" id="7_h3nmf"]
+[ext_resource type="PackedScene" uid="uid://bper63aev0v7w" path="res://Prefabs/Ropes.tscn" id="7_hueuk"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -16,15 +18,6 @@ texture = ExtResource("1_g6ejq")
 
 [node name="Spikey" parent="." instance=ExtResource("2_djkur")]
 position = Vector2(196, -297)
-
-[node name="Spikey2" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(-322, -464)
-
-[node name="Spikey3" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(559, 372)
-
-[node name="Spikey4" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(701, -406)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_xhtwi")]
 position = Vector2(-341, -18)
@@ -59,3 +52,37 @@ offset_left = -186.0
 offset_bottom = 193.0
 grow_horizontal = 0
 script = ExtResource("6_aan6j")
+
+[node name="Ropes" parent="." instance=ExtResource("7_hueuk")]
+position = Vector2(946, -18)
+
+[node name="Ropes2" parent="." instance=ExtResource("7_hueuk")]
+position = Vector2(-946, -18)
+
+[node name="Ropes3" parent="." instance=ExtResource("7_hueuk")]
+position = Vector2(-128, -698)
+rotation = 1.57079
+
+[node name="Ropes6" parent="." instance=ExtResource("7_hueuk")]
+position = Vector2(266, -698)
+rotation = 1.57079
+
+[node name="Ropes4" parent="." instance=ExtResource("7_hueuk")]
+position = Vector2(-152, 710)
+rotation = 1.57079
+
+[node name="Ropes5" parent="." instance=ExtResource("7_hueuk")]
+position = Vector2(242, 710)
+rotation = 1.57079
+
+[node name="StaticBody2D" parent="." instance=ExtResource("7_h3nmf")]
+position = Vector2(-946, 698)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("7_h3nmf")]
+position = Vector2(946, 698)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("7_h3nmf")]
+position = Vector2(-946, -698)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("7_h3nmf")]
+position = Vector2(946, -698)
