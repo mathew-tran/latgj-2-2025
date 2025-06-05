@@ -1,0 +1,179 @@
+[gd_scene load_steps=36 format=3 uid="uid://c1kbmsa1w7lo8"]
+
+[ext_resource type="PackedScene" uid="uid://b1ogo8a5bckpl" path="res://Prefabs/Enemies/Toasty.tscn" id="1_7e3wj"]
+[ext_resource type="Texture2D" uid="uid://dqo1euvb552hr" path="res://Art/Enemy/Killburn.png" id="2_whvxh"]
+[ext_resource type="Script" uid="uid://5mi46ijyxaq0" path="res://Scripts/Content/EnemyBehaviour.gd" id="3_c6jsm"]
+[ext_resource type="Texture2D" uid="uid://bwxb73qpusv0d" path="res://Art/Enemy/KillburnHurt.png" id="3_onw8v"]
+[ext_resource type="Script" uid="uid://dggao2aqlonxr" path="res://Scripts/Content/EnemyShootBehaviour.gd" id="4_6hm38"]
+[ext_resource type="Script" uid="uid://33coi67ylhnn" path="res://Scripts/Content/EnemySpikeBehaviour.gd" id="4_18fgu"]
+[ext_resource type="Texture2D" uid="uid://7lnwl42ynx0x" path="res://Art/Enemy/KillburnDead.png" id="4_abe1u"]
+[ext_resource type="PackedScene" uid="uid://cab1sp83lkkf5" path="res://Prefabs/Enemies/SpikeHand.tscn" id="5_6hm38"]
+[ext_resource type="Texture2D" uid="uid://b8ukn348y2241" path="res://Art/Stills/KillburnStill.png" id="5_60pj6"]
+[ext_resource type="Script" uid="uid://b6aanyrl4sgki" path="res://Scripts/Content/EnemyWaitBehaviour.gd" id="5_esoqa"]
+[ext_resource type="Script" uid="uid://dlu7w55o0qo1h" path="res://Scripts/Content/EnemyMoveBehaviour.gd" id="6_jn30p"]
+[ext_resource type="Script" uid="uid://bf76n57ops542" path="res://Scripts/Content/EnemyRotateBehaviour.gd" id="8_jn30p"]
+
+[sub_resource type="Resource" id="Resource_vdx8h"]
+script = ExtResource("5_esoqa")
+Timeout = 0.3
+bLookAtPlayer = true
+metadata/_custom_type_script = "uid://b6aanyrl4sgki"
+
+[sub_resource type="Resource" id="Resource_onw8v"]
+script = ExtResource("4_18fgu")
+bEnable = true
+metadata/_custom_type_script = "uid://33coi67ylhnn"
+
+[sub_resource type="Resource" id="Resource_abe1u"]
+script = ExtResource("5_esoqa")
+Timeout = 0.2
+bLookAtPlayer = true
+metadata/_custom_type_script = "uid://b6aanyrl4sgki"
+
+[sub_resource type="Resource" id="Resource_rp458"]
+script = ExtResource("4_6hm38")
+AmountOfShots = 3
+FireRate = 2.0
+bLookAtPlayerWhileShooting = true
+metadata/_custom_type_script = "uid://dggao2aqlonxr"
+
+[sub_resource type="Resource" id="Resource_60pj6"]
+script = ExtResource("6_jn30p")
+MovePosition = 9
+MoveSpeed = 1
+Timeout = 0.5
+metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
+
+[sub_resource type="Resource" id="Resource_dv2d8"]
+script = ExtResource("5_esoqa")
+Timeout = 0.2
+bLookAtPlayer = false
+metadata/_custom_type_script = "uid://b6aanyrl4sgki"
+
+[sub_resource type="Resource" id="Resource_qey08"]
+script = ExtResource("4_18fgu")
+bEnable = false
+metadata/_custom_type_script = "uid://33coi67ylhnn"
+
+[sub_resource type="Resource" id="Resource_pdb5a"]
+script = ExtResource("5_esoqa")
+Timeout = 3.0
+bLookAtPlayer = true
+metadata/_custom_type_script = "uid://b6aanyrl4sgki"
+
+[sub_resource type="Resource" id="Resource_18fgu"]
+script = ExtResource("6_jn30p")
+MovePosition = 0
+MoveSpeed = 2
+Timeout = -1.0
+metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
+
+[sub_resource type="Resource" id="Resource_plyl2"]
+script = ExtResource("5_esoqa")
+Timeout = 0.3
+bLookAtPlayer = true
+metadata/_custom_type_script = "uid://b6aanyrl4sgki"
+
+[sub_resource type="Resource" id="Resource_esoqa"]
+script = ExtResource("4_18fgu")
+bEnable = true
+metadata/_custom_type_script = "uid://33coi67ylhnn"
+
+[sub_resource type="Resource" id="Resource_jn30p"]
+script = ExtResource("6_jn30p")
+MovePosition = 8
+MoveSpeed = 2
+Timeout = -1.0
+metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
+
+[sub_resource type="Resource" id="Resource_s40vl"]
+script = ExtResource("6_jn30p")
+MovePosition = 9
+MoveSpeed = 1
+Timeout = -1.0
+metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
+
+[sub_resource type="Resource" id="Resource_wegwv"]
+script = ExtResource("4_18fgu")
+bEnable = false
+metadata/_custom_type_script = "uid://33coi67ylhnn"
+
+[sub_resource type="Resource" id="Resource_u34s0"]
+script = ExtResource("5_esoqa")
+Timeout = 2.5
+bLookAtPlayer = true
+metadata/_custom_type_script = "uid://b6aanyrl4sgki"
+
+[sub_resource type="Resource" id="Resource_di2tt"]
+script = ExtResource("5_esoqa")
+Timeout = 0.2
+bLookAtPlayer = true
+metadata/_custom_type_script = "uid://b6aanyrl4sgki"
+
+[sub_resource type="Resource" id="Resource_j4u1y"]
+script = ExtResource("4_18fgu")
+bEnable = true
+metadata/_custom_type_script = "uid://33coi67ylhnn"
+
+[sub_resource type="Resource" id="Resource_8xtgg"]
+script = ExtResource("6_jn30p")
+MovePosition = 9
+MoveSpeed = 2
+Timeout = 0.8
+metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
+
+[sub_resource type="Resource" id="Resource_tbofn"]
+script = ExtResource("8_jn30p")
+RotateDegrees = 360
+RotateTime = 1.0
+metadata/_custom_type_script = "uid://bf76n57ops542"
+
+[sub_resource type="Resource" id="Resource_bebh7"]
+script = ExtResource("6_jn30p")
+MovePosition = 9
+MoveSpeed = 2
+Timeout = 1.2
+metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
+
+[sub_resource type="Resource" id="Resource_kojek"]
+script = ExtResource("8_jn30p")
+RotateDegrees = 720
+RotateTime = 2.0
+metadata/_custom_type_script = "uid://bf76n57ops542"
+
+[sub_resource type="Resource" id="Resource_f0pha"]
+script = ExtResource("4_18fgu")
+bEnable = false
+metadata/_custom_type_script = "uid://33coi67ylhnn"
+
+[sub_resource type="Resource" id="Resource_taj4q"]
+script = ExtResource("5_esoqa")
+Timeout = 3.0
+bLookAtPlayer = true
+metadata/_custom_type_script = "uid://b6aanyrl4sgki"
+
+[node name="Killburn" instance=ExtResource("1_7e3wj")]
+Name = "Killburn"
+NormalTexture = ExtResource("2_whvxh")
+HitTexture = ExtResource("3_onw8v")
+DeathTexture = ExtResource("4_abe1u")
+StillTexture = ExtResource("5_60pj6")
+FightMusic = 0
+KillXP = 1000
+
+[node name="Brain" parent="." index="0"]
+AttackPattern1 = Array[ExtResource("3_c6jsm")]([SubResource("Resource_vdx8h"), SubResource("Resource_onw8v"), SubResource("Resource_abe1u"), SubResource("Resource_rp458"), SubResource("Resource_60pj6"), SubResource("Resource_dv2d8"), SubResource("Resource_qey08"), SubResource("Resource_pdb5a")])
+AttackPattern2 = Array[ExtResource("3_c6jsm")]([SubResource("Resource_18fgu"), SubResource("Resource_plyl2"), SubResource("Resource_esoqa"), SubResource("Resource_jn30p"), SubResource("Resource_s40vl"), SubResource("Resource_wegwv"), SubResource("Resource_u34s0")])
+AttackPattern3 = Array[ExtResource("3_c6jsm")]([SubResource("Resource_di2tt"), SubResource("Resource_j4u1y"), SubResource("Resource_8xtgg"), SubResource("Resource_tbofn"), SubResource("Resource_bebh7"), SubResource("Resource_kojek"), SubResource("Resource_f0pha"), SubResource("Resource_taj4q")])
+
+[node name="SpikeHandLeft" parent="." index="2" instance=ExtResource("5_6hm38")]
+position = Vector2(142, 151)
+
+[node name="SpikeHandRight" parent="." index="3" instance=ExtResource("5_6hm38")]
+position = Vector2(146, -145)
+
+[node name="Sprite2D" parent="." index="4"]
+texture = ExtResource("2_whvxh")
+
+[node name="HealthComponent" parent="." index="6"]
+MaxHealth = 65

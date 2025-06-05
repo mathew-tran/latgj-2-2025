@@ -13,6 +13,8 @@ var ExtremeSpeed = 6000
 @export var NormalTexture : Texture2D
 @export var HitTexture : Texture2D
 @export var DeathTexture : Texture2D
+@export var StillTexture : Texture2D
+@export var FightMusic : SoundMixerManager.SONG_NAME
 @export var KillXP = 500
 
 signal OnDeath
@@ -88,6 +90,18 @@ func _on_health_component_on_death() -> void:
 	OnDeath.emit()
 	queue_free()
 
+func ActivateSpikes():
+	if get_node_or_null("SpikeHandLeft"):
+		$SpikeHandLeft.EnableSpike()
+	if get_node_or_null("SpikeHandRight"):
+		$SpikeHandRight.EnableSpike()
+
+func DeactivateSpikes():
+	if get_node_or_null("SpikeHandLeft"):
+		$SpikeHandLeft.DisableSpike()
+	if get_node_or_null("SpikeHandRight"):
+		$SpikeHandRight.DisableSpike()
+	
 
 func _on_timer_timeout() -> void:
 	bCanMove = true

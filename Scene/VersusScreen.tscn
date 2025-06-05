@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://bfc7og38augh3"]
+[gd_scene load_steps=13 format=3 uid="uid://bfc7og38augh3"]
 
 [ext_resource type="Script" uid="uid://bj8bdwel8y0rf" path="res://Scripts/VersusScreenUI.gd" id="1_bu2m6"]
-[ext_resource type="Texture2D" uid="uid://cp1scwing4rtl" path="res://Art/Character/Player.png" id="1_gxxb2"]
+[ext_resource type="Texture2D" uid="uid://b5q5bvrqk3t6j" path="res://Art/Stills/PlayerStill.png" id="2_ic6cv"]
+[ext_resource type="Texture2D" uid="uid://ca5hq144t2tbc" path="res://Art/Stills/ToastyStill.png" id="3_ic6cv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gxxb2"]
 bg_color = Color(0, 0, 0, 1)
@@ -13,12 +14,26 @@ border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c6k5o"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 22
+border_width_bottom = 2
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ic6cv"]
 bg_color = Color(0.75234, 0.18732, 0, 1)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_280sy"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 22
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
 
 [sub_resource type="Animation" id="Animation_ic6cv"]
 length = 0.001
@@ -206,19 +221,21 @@ offset_bottom = 800.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_bu2m6")
 
 [node name="Player" type="TextureRect" parent="CanvasLayer/Panel"]
-custom_minimum_size = Vector2(400, 400)
+custom_minimum_size = Vector2(300, 300)
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 45.0
-offset_top = -140.0
-offset_right = 445.0
-offset_bottom = 260.0
+offset_left = 107.0
+offset_top = -105.0
+offset_right = 407.0
+offset_bottom = 295.0
 grow_vertical = 2
 rotation = -0.243438
-texture = ExtResource("1_gxxb2")
-stretch_mode = 5
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_ic6cv")
+expand_mode = 4
+stretch_mode = 3
 
 [node name="NamePlate2" type="Panel" parent="CanvasLayer/Panel"]
 custom_minimum_size = Vector2(400, 100)
@@ -228,13 +245,14 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -253.0
-offset_top = -236.0
-offset_right = 147.0
-offset_bottom = -136.0
+offset_left = -80.0
+offset_top = -260.0
+offset_right = 320.0
+offset_bottom = -160.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.5, 0.5)
+theme_override_styles/panel = SubResource("StyleBoxFlat_c6k5o")
 metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer/Panel/NamePlate2"]
@@ -259,14 +277,12 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_ic6cv")
 [node name="Player" type="TextureRect" parent="CanvasLayer/Panel2"]
 custom_minimum_size = Vector2(400, 400)
 layout_mode = 0
-offset_left = -52.0
-offset_top = 75.0
-offset_right = 348.0
-offset_bottom = 475.0
-rotation = -0.389773
-texture = ExtResource("1_gxxb2")
+offset_left = -182.0
+offset_top = -12.0
+offset_right = 598.0
+offset_bottom = 468.0
+texture = ExtResource("3_ic6cv")
 stretch_mode = 5
-flip_h = true
 
 [node name="NamePlate" type="Panel" parent="CanvasLayer/Panel2"]
 custom_minimum_size = Vector2(400, 100)
@@ -283,6 +299,7 @@ offset_bottom = -655.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.5, 0.5)
+theme_override_styles/panel = SubResource("StyleBoxFlat_280sy")
 metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer/Panel2/NamePlate"]

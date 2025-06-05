@@ -298,8 +298,7 @@ func _on_timer_timeout() -> void:
 	ClearCommand()
 	
 
-
-func _on_hitbox_body_entered(body: Node2D) -> void:
+func GetHit(body, damage):
 	if body is Bullet:
 		if body.bEnabled == false:
 			return
@@ -311,7 +310,14 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 
 	if $HealthComponent.IsAlive() == false:
 		return
-	$HealthComponent.TakeDamage(3)
+	$HealthComponent.TakeDamage(damage)
 	Finder.GetGame().AddPoints(100)
 
 	Finder.GetGame().Slomo(.2, .5)
+
+func _on_hitbox_body_entered(body: Node2D) -> void:
+	if body is Bullet:
+		if body.bEnabled == false:
+			return
+		else:
+			GetHit(body, 3)

@@ -16,7 +16,8 @@ var CurrentState = STATE.VERSUS_SCREEN
 
 var Enemies = [
 	"res://Prefabs/Enemies/Toasty.tscn",
-	"res://Prefabs/Enemies/Toasty.tscn",
+	"res://Prefabs/Enemies/Killburn.tscn",
+
 	"res://Prefabs/Enemies/Toasty.tscn",
 ]
 func CanPlay():
@@ -26,7 +27,6 @@ func CanPlay():
 func SpawnEnemy():
 	CurrentState = STATE.VERSUS_SCREEN
 	$CanvasLayer/BeginBlocker.visible = true
-	SoundMixer.PlaySong(SoundMixerManager.SONG_NAME.BATTLEWITHBEASTS)
 	var newEnemy = load(Enemies.pop_front()).instantiate()
 	
 	newEnemy.global_position = $SpawnPoints.get_children().pick_random().global_position

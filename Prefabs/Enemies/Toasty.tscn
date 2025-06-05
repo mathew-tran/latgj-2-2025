@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://b1ogo8a5bckpl"]
+[gd_scene load_steps=31 format=3 uid="uid://b1ogo8a5bckpl"]
 
 [ext_resource type="Script" uid="uid://iyni07i4mwid" path="res://Scripts/Enemy.gd" id="1_w3icy"]
 [ext_resource type="PackedScene" uid="uid://qim86jss2s4y" path="res://Prefabs/Cannon.tscn" id="2_2l16u"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://5mi46ijyxaq0" path="res://Scripts/Content/EnemyBehaviour.gd" id="3_f8d0y"]
 [ext_resource type="Texture2D" uid="uid://bv3xnjoixbkcr" path="res://Art/Enemy/ToastyDeath.png" id="4_egt4e"]
 [ext_resource type="Script" uid="uid://dlu7w55o0qo1h" path="res://Scripts/Content/EnemyMoveBehaviour.gd" id="4_nut3w"]
+[ext_resource type="Texture2D" uid="uid://ca5hq144t2tbc" path="res://Art/Stills/ToastyStill.png" id="5_awsep"]
 [ext_resource type="Script" uid="uid://dggao2aqlonxr" path="res://Scripts/Content/EnemyShootBehaviour.gd" id="5_u2u6a"]
 [ext_resource type="Script" uid="uid://b6aanyrl4sgki" path="res://Scripts/Content/EnemyWaitBehaviour.gd" id="6_oiv7f"]
 [ext_resource type="Texture2D" uid="uid://hsf5cagdn4gw" path="res://Art/Projectiles/EnemyStar.png" id="11_5vm38"]
@@ -84,7 +85,7 @@ metadata/_custom_type_script = "uid://dggao2aqlonxr"
 [sub_resource type="Resource" id="Resource_n7vg6"]
 script = ExtResource("4_nut3w")
 MovePosition = 9
-MoveSpeed = 1
+MoveSpeed = 2
 Timeout = 2.0
 metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
 
@@ -163,6 +164,8 @@ Name = "Toasty"
 NormalTexture = ExtResource("2_w3icy")
 HitTexture = ExtResource("3_c3ywg")
 DeathTexture = ExtResource("4_egt4e")
+StillTexture = ExtResource("5_awsep")
+FightMusic = 1
 
 [node name="Brain" type="Node" parent="."]
 script = ExtResource("2_xc4hd")
