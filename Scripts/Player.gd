@@ -153,6 +153,7 @@ func ExecuteCommand():
 		var tween = get_tree().create_tween()
 		tween.tween_property(self, "rotation_degrees", rotation_degrees + 360, .2)
 		await tween.finished
+		velocity += Vector2.RIGHT.rotated(rotation) * 3500
 		await UseLeft(Fist.ATTACK.JAB, 1, 12, 4000)
 		SetIdle()
 	elif CommandList == "RRR":
@@ -300,12 +301,15 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body is Bullet:
 		if body.bEnabled == false:
 			return
+	
+	var direction = (global_position - body.global_position).normalized()
+	velocity += direction * 1200
+	if body is Bullet:
+		body.queue_free()
+
 	if $HealthComponent.IsAlive() == false:
 		return
 	$HealthComponent.TakeDamage(3)
 	Finder.GetGame().AddPoints(100)
-	var direction = (global_position - body.global_position).normalized()
-	velocity += direction * 1200
+
 	Finder.GetGame().Slomo(.2, .5)
-	if body is Bullet:
-		body.queue_free()

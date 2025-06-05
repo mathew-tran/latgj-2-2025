@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="boxing"
-run/main_scene="uid://bbrr2wswji1br"
+run/main_scene="uid://cb1xgtg8odvi1"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Finder="*res://Scripts/Autoload/Finder.gd"
+SoundMixer="*res://Prefabs/Autoload/SoundMixer.tscn"
 
 [input]
 

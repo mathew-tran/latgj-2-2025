@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://co2oc113avpaq"]
+
+[ext_resource type="Script" uid="uid://b2a38tivec6dy" path="res://Scripts/Autoload/SoundMixer.gd" id="1_726kd"]
+
+[node name="SoundMixer" type="Node2D"]
+script = ExtResource("1_726kd")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]

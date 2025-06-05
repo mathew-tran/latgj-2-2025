@@ -5,6 +5,7 @@ func _ready() -> void:
 	
 func OnPlayerDied():
 	$AnimationPlayer.play("anim")
+	SoundMixer.PlaySong(SoundMixerManager.SONG_NAME.ORIGINS)
 
 
 func _on_restart_button_button_up() -> void:

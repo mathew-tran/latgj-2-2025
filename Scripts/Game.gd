@@ -10,6 +10,7 @@ signal OnPlayerDied
 func _ready() -> void:
 	await get_tree().process_frame
 	GetPlayer().GetHealthComponent().OnDeath.connect(OnPlayerDeath)
+	SoundMixer.PlaySong(SoundMixerManager.SONG_NAME.BATTLEWITHBEASTS)
 	
 func OnPlayerDeath():
 	OnPlayerDied.emit()

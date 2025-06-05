@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PrologueInfo" load_steps=3 format=3 uid="uid://nrkaskh56bob"]
+
+[ext_resource type="Texture2D" uid="uid://d0ncjkwgxgd1v" path="res://Art/Stills/P_2.png" id="1_m77ar"]
+[ext_resource type="Script" uid="uid://b5tkg4ufqmew0" path="res://Content/PrologueInfo.gd" id="2_w7nwr"]
+
+[resource]
+script = ExtResource("2_w7nwr")
+ContentImage = ExtResource("1_m77ar")
+TextContent = ".. You begin to dream"
+TimeToShow = 3.0
+metadata/_custom_type_script = "uid://b5tkg4ufqmew0"

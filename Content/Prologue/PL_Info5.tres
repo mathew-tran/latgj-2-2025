@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PrologueInfo" load_steps=3 format=3 uid="uid://diorkkpdvho3y"]
+
+[ext_resource type="Texture2D" uid="uid://et46n4ijrvnu" path="res://Art/Stills/P_5.png" id="1_0jx2a"]
+[ext_resource type="Script" uid="uid://b5tkg4ufqmew0" path="res://Content/PrologueInfo.gd" id="2_cey6q"]
+
+[resource]
+script = ExtResource("2_cey6q")
+ContentImage = ExtResource("1_0jx2a")
+TextContent = "It looks like ALL your appliances have gained sentience!
+.....
+....
+....
+Do you have the guts to beat them all?"
+TimeToShow = 5.0
+metadata/_custom_type_script = "uid://b5tkg4ufqmew0"
