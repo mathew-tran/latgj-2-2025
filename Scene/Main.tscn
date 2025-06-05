@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://dajfvqi5rswl" path="res://Art/Field/Playfield.png" id="1_g6ejq"]
 [ext_resource type="Script" uid="uid://d2a0kp8c23bp" path="res://Scripts/Game.gd" id="1_vm4ek"]
 [ext_resource type="PackedScene" uid="uid://ckwjpw38i8rea" path="res://Prefabs/Player.tscn" id="1_xhtwi"]
-[ext_resource type="PackedScene" uid="uid://b1ogo8a5bckpl" path="res://Prefabs/Enemies/Toasty.tscn" id="2_djkur"]
 [ext_resource type="Script" uid="uid://degwtpckpuf3m" path="res://Scripts/ComboUI.gd" id="4_h175a"]
 [ext_resource type="PackedScene" uid="uid://de4py1wnvgc00" path="res://Prefabs/HealthUI.tscn" id="5_togfq"]
 [ext_resource type="Script" uid="uid://laq2kjtpqwci" path="res://Scripts/EnemyHealthContainerUI.gd" id="6_aan6j"]
@@ -14,14 +13,16 @@
 [ext_resource type="PackedScene" uid="uid://dvkjknsqasvn" path="res://Prefabs/GameOverUI.tscn" id="9_i0sg4"]
 [ext_resource type="Script" uid="uid://bitsd5mwlgbkn" path="res://Scripts/EnemyPositions.gd" id="9_yg4ot"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i0sg4"]
+bg_color = Color(0, 0, 0, 1)
+
 [node name="Game" type="Node2D" groups=["Game"]]
 script = ExtResource("1_vm4ek")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_g6ejq")
 
-[node name="Spikey" parent="." instance=ExtResource("2_djkur")]
-position = Vector2(196, -297)
+[node name="Enemies" type="Node2D" parent="."]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_xhtwi")]
 position = Vector2(-341, -18)
@@ -88,6 +89,15 @@ horizontal_alignment = 1
 script = ExtResource("8_4qtod")
 
 [node name="GameOverUI" parent="CanvasLayer" instance=ExtResource("9_i0sg4")]
+
+[node name="BeginBlocker" type="Panel" parent="CanvasLayer"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_i0sg4")
 
 [node name="Ropes" parent="." instance=ExtResource("7_hueuk")]
 position = Vector2(946, -18)
@@ -161,4 +171,44 @@ texture = ExtResource("9_6a8me")
 
 [node name="TopRight" type="Sprite2D" parent="EnemyPositions"]
 position = Vector2(696, -495)
+texture = ExtResource("9_6a8me")
+
+[node name="SpawnPoints" type="Node2D" parent="."]
+modulate = Color(10, 10, 1, 1)
+
+[node name="Point0" type="Sprite2D" parent="SpawnPoints"]
+position = Vector2(1468, -217)
+texture = ExtResource("9_6a8me")
+
+[node name="Point1" type="Sprite2D" parent="SpawnPoints"]
+position = Vector2(-21, -984)
+texture = ExtResource("9_6a8me")
+
+[node name="Point2" type="Sprite2D" parent="SpawnPoints"]
+position = Vector2(-101, 903)
+texture = ExtResource("9_6a8me")
+
+[node name="Point3" type="Sprite2D" parent="SpawnPoints"]
+position = Vector2(-1328, -138)
+texture = ExtResource("9_6a8me")
+
+[node name="Point4" type="Sprite2D" parent="SpawnPoints"]
+position = Vector2(550, -944)
+texture = ExtResource("9_6a8me")
+
+[node name="Point6" type="Sprite2D" parent="SpawnPoints"]
+position = Vector2(1377, 1064)
+texture = ExtResource("9_6a8me")
+
+[node name="Point7" type="Sprite2D" parent="SpawnPoints"]
+position = Vector2(-1371, 889)
+texture = ExtResource("9_6a8me")
+
+[node name="Point8" type="Sprite2D" parent="SpawnPoints"]
+position = Vector2(-1307, -1009)
+rotation = -2.26168
+texture = ExtResource("9_6a8me")
+
+[node name="Point5" type="Sprite2D" parent="SpawnPoints"]
+position = Vector2(1522, -251)
 texture = ExtResource("9_6a8me")

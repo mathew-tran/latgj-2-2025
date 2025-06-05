@@ -12,13 +12,19 @@ enum POSITIONS {
 	TOP_LEFT,
 	TOP_RIGHT,
 	TOP_MIDDLE,
-	PLAYER
+	PLAYER,
+	RANDOM
 }
 
 func _init() -> void:
 	visible = false
 	
 func GetPosition(pos : POSITIONS):
+	
+	if pos == POSITIONS.RANDOM:
+		pos = POSITIONS.values().pick_random()
+		while pos == POSITIONS.PLAYER or pos == POSITIONS.RANDOM:
+			pos = POSITIONS.values().pick_random()
 	match pos:
 		POSITIONS.MIDDLE:
 			return $Middle.global_position

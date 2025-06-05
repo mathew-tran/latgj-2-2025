@@ -49,6 +49,8 @@ func SetIdle():
 	CurrentState = STATE.IDLE
 	
 func _process(delta: float) -> void:
+	if Finder.GetGame().CanPlay() == false:
+		return
 	velocity *= .92
 	move_and_slide()
 	if bIsPlayerDead:

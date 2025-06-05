@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://b1ogo8a5bckpl"]
+[gd_scene load_steps=30 format=3 uid="uid://b1ogo8a5bckpl"]
 
 [ext_resource type="Script" uid="uid://iyni07i4mwid" path="res://Scripts/Enemy.gd" id="1_w3icy"]
 [ext_resource type="PackedScene" uid="uid://qim86jss2s4y" path="res://Prefabs/Cannon.tscn" id="2_2l16u"]
@@ -13,17 +13,24 @@
 [ext_resource type="Script" uid="uid://b6aanyrl4sgki" path="res://Scripts/Content/EnemyWaitBehaviour.gd" id="6_oiv7f"]
 [ext_resource type="Texture2D" uid="uid://hsf5cagdn4gw" path="res://Art/Projectiles/EnemyStar.png" id="11_5vm38"]
 
+[sub_resource type="Resource" id="Resource_uu8vh"]
+script = ExtResource("4_nut3w")
+MovePosition = 10
+MoveSpeed = 2
+Timeout = -1.0
+metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
+
 [sub_resource type="Resource" id="Resource_u2u6a"]
 script = ExtResource("4_nut3w")
 MovePosition = 9
-bIsRunning = true
+MoveSpeed = 1
 Timeout = 3.0
 metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
 
 [sub_resource type="Resource" id="Resource_nut3w"]
 script = ExtResource("4_nut3w")
 MovePosition = 1
-bIsRunning = true
+MoveSpeed = 1
 Timeout = -1.0
 metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
 
@@ -43,7 +50,7 @@ metadata/_custom_type_script = "uid://b6aanyrl4sgki"
 [sub_resource type="Resource" id="Resource_5vm38"]
 script = ExtResource("4_nut3w")
 MovePosition = 8
-bIsRunning = true
+MoveSpeed = 1
 Timeout = -1.0
 metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
 
@@ -63,7 +70,7 @@ metadata/_custom_type_script = "uid://b6aanyrl4sgki"
 [sub_resource type="Resource" id="Resource_y5q0t"]
 script = ExtResource("4_nut3w")
 MovePosition = 2
-bIsRunning = false
+MoveSpeed = 1
 Timeout = -1.0
 metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
 
@@ -77,7 +84,7 @@ metadata/_custom_type_script = "uid://dggao2aqlonxr"
 [sub_resource type="Resource" id="Resource_n7vg6"]
 script = ExtResource("4_nut3w")
 MovePosition = 9
-bIsRunning = false
+MoveSpeed = 1
 Timeout = 2.0
 metadata/_custom_type_script = "uid://dlu7w55o0qo1h"
 
@@ -159,6 +166,7 @@ DeathTexture = ExtResource("4_egt4e")
 
 [node name="Brain" type="Node" parent="."]
 script = ExtResource("2_xc4hd")
+EntryPattern = Array[ExtResource("3_f8d0y")]([SubResource("Resource_uu8vh")])
 AttackPattern1 = Array[ExtResource("3_f8d0y")]([SubResource("Resource_u2u6a"), SubResource("Resource_nut3w"), SubResource("Resource_oiv7f"), SubResource("Resource_egt4e"), SubResource("Resource_5vm38"), SubResource("Resource_c3ywg")])
 AttackPattern2 = Array[ExtResource("3_f8d0y")]([SubResource("Resource_awsep"), SubResource("Resource_y5q0t"), SubResource("Resource_w8yyk")])
 AttackPattern3 = Array[ExtResource("3_f8d0y")]([SubResource("Resource_n7vg6"), SubResource("Resource_35gn3")])

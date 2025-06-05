@@ -1,5 +1,6 @@
 extends Node
 
+@export var EntryPattern : Array[EnemyBehaviour]
 @export var AttackPattern1 : Array[EnemyBehaviour]
 @export var AttackPattern2 : Array[EnemyBehaviour]
 @export var AttackPattern3 : Array[EnemyBehaviour]
@@ -14,11 +15,14 @@ var EnemyRef : Enemy
 func _ready() -> void:
 	EnemyRef = get_parent()
 	ChoosePattern()
+	CurrentPattern = EntryPattern
 	
 func GetCurrentBehaviour() -> EnemyBehaviour:
 	return CurrentPattern[BehaviourIndex]
 	
 func _process(delta: float) -> void:
+	if Finder.GetGame().CanPlay() == false:
+		return
 	if EnemyRef.GetHealthComponent().IsAlive() == false:
 		return
 	if EnemyRef.bCanMove == false:

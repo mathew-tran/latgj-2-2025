@@ -7,12 +7,15 @@ class_name Enemy
 var bIsActivated = false
 var bCanMove = true
 var MoveSpeed = 1600
-var RunSpeed = 4800
+var RunSpeed = 2500
+var ExtremeSpeed = 6000
 
 @export var NormalTexture : Texture2D
 @export var HitTexture : Texture2D
 @export var DeathTexture : Texture2D
 @export var KillXP = 500
+
+signal OnDeath
 
 func GetHealthComponent():
 	return $HealthComponent
@@ -82,6 +85,7 @@ func _on_health_component_on_death() -> void:
 	tween.tween_property(self, "scale", Vector2.ZERO, .3)
 	
 	await tween.finished
+	OnDeath.emit()
 	queue_free()
 
 
