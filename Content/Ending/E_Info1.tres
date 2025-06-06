@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PrologueInfo" load_steps=3 format=3 uid="uid://dw74l88elb8d7"]
+
+[ext_resource type="Texture2D" uid="uid://kydr71dx3svt" path="res://Art/Stills/E_1.png" id="1_kxt7g"]
+[ext_resource type="Script" uid="uid://b5tkg4ufqmew0" path="res://Content/PrologueInfo.gd" id="1_y8t6h"]
+
+[resource]
+script = ExtResource("1_y8t6h")
+ContentImage = ExtResource("1_kxt7g")
+TextContent = "You've successfully defeated all the appliances on your own."
+TimeToShow = 4.0
+metadata/_custom_type_script = "uid://b5tkg4ufqmew0"

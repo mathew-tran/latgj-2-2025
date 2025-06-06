@@ -25,8 +25,9 @@ func OnSetup():
 	
 func OnTakeDamage(amount):
 	UpdateHealthBar()
-	$AnimationPlayer.stop()
-	$AnimationPlayer.play("hit")
+	if amount > 0:
+		$AnimationPlayer.stop()
+		$AnimationPlayer.play("hit")
 	
 func OnDeath():
 	$ProgressBar/Label.text = "DEAD"

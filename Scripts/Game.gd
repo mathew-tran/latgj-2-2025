@@ -16,10 +16,13 @@ var CurrentState = STATE.VERSUS_SCREEN
 
 var Enemies = [
 	"res://Prefabs/Enemies/Toasty.tscn",
+	"res://Prefabs/Enemies/MrWave.tscn",
 	"res://Prefabs/Enemies/Killburn.tscn",
 
-	"res://Prefabs/Enemies/Toasty.tscn",
+
 ]
+var bFirstRound = true
+
 func CanPlay():
 	return CurrentState == STATE.GAMEPLAY
 	
@@ -38,13 +41,18 @@ func SpawnEnemy():
 	await instance.CompleteAnimation
 	CurrentState = STATE.GAMEPLAY
 	newEnemy.OnDeath.connect(OnEnemyDeath)
+	if bFirstRound == false:
+		Finder.GetPlayer().GetHealthComponent().Recover()
+	bFirstRound = false
 	
 func OnEnemyDeath():
 	if len(Enemies) > 0:
 		SpawnEnemy()
 	else:
 		# Show victory screen
-		pass
+		Persist.AttemptNewHighScore(Points)
+		get_tree().change_scene_to_file("res://Scene/Ending.tscn")
+		
 	
 func _ready() -> void:
 	$CanvasLayer/BeginBlocker.visible = true
@@ -53,7 +61,14 @@ func _ready() -> void:
 	SpawnEnemy()
 	
 	
+	if Persist.bHasDoneTutorial == false:
+		var instance = load("res://Prefabs/FirstTimeControls.tscn").instantiate()
+		add_child(instance)
+		Persist.bHasDoneTutorial = true
+	
+	
 func OnPlayerDeath():
+	Persist.AttemptNewHighScore(Points)
 	OnPlayerDied.emit()
 	
 func GetPlayer():
@@ -63,7 +78,8 @@ func GetEnemy():
 	return Finder.GetEnemy()
 
 func AddPoints(amount):
-	Points += amount
+	Points += roundi(amount)
+	Points = roundi(Points)
 	OnPointsAdded.emit(Points)
 
 func Slomo(time, amount):

@@ -39,6 +39,8 @@ func OnDeath():
 	$AnimationPlayer.play("death")
 	
 func OnTakeDamage(amount):
+	if amount == 0:
+		return
 	$AnimationPlayer.play("hit")
 	$HitParticle.emitting = true
 	

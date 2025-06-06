@@ -7,7 +7,8 @@ class_name MoveBehaviour
 enum MOVE_SPEED {
 	SLOW,
 	NORMAL,
-	EXTREME
+	EXTREME,
+	TELEPORT
 }
 @export var MoveSpeed = MOVE_SPEED.NORMAL
 @export var Timeout = -1.0
@@ -24,11 +25,24 @@ func Setup():
 		await Finder.GetEnemy().get_tree().create_timer(Timeout).timeout
 		bHasTimedOut = true
 		print("timedout")
+	if MoveSpeed == MOVE_SPEED.TELEPORT:
+		var enemy = Finder.GetEnemy()
+		var tween = enemy.create_tween()
+		tween.tween_property(enemy, "scale", Vector2.ZERO, .2)
+		await tween.finished
+		enemy.global_position = PlannedPosition
+		tween = enemy.create_tween()
+		tween.tween_property(enemy, "scale", Vector2.ONE, .2)
+		await tween.finished
+		bHasTimedOut = true
+		
 		
 func CanRun():
 	var enemy = Finder.GetEnemy()
 	
-	return enemy.global_position.distance_to(PlannedPosition) > 20 and bHasTimedOut == false
+	if MoveSpeed != MOVE_SPEED.TELEPORT:
+		return enemy.global_position.distance_to(PlannedPosition) > 20 and bHasTimedOut == false
+	return bHasTimedOut == false
 
 func Run(delta):
 	var enemy = Finder.GetEnemy()
@@ -41,6 +55,8 @@ func Run(delta):
 			speed = enemy.RunSpeed
 		MOVE_SPEED.EXTREME:
 			speed = enemy.ExtremeSpeed
+		MOVE_SPEED.TELEPORT:
+			speed = 0
 	enemy.velocity += moveVector * speed * delta
 	enemy.look_at(PlannedPosition)
 

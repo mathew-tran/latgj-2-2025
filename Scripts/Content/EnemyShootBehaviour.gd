@@ -16,6 +16,7 @@ func Setup():
 	CurrentAmount = 0
 	bCanShoot = true
 	print(bCanShoot)
+	Finder.GetEnemy().modulate = Color.RED
 	
 func CanRun():
 	return CurrentAmount < AmountOfShots
@@ -26,7 +27,6 @@ func Run(delta):
 	if bCanShoot:
 		bCanShoot = false
 		print(bCanShoot)
-		
 		await Finder.GetEnemy().Shoot(FireRate)
 		CurrentAmount += 1
 		bCanShoot = true
@@ -36,4 +36,5 @@ func Run(delta):
 
 func Cleanup():
 	bCanShoot = false
+	Finder.GetEnemy().modulate = Color.WHITE
 	

@@ -18,4 +18,4 @@ func DisableSpike():
 	
 func _on_spike_body_entered(body: Node2D) -> void:
 	if body is Player:
-		body.GetHit(self, 1)
+		body.GetHit(self, 2)

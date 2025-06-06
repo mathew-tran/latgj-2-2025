@@ -176,4 +176,4 @@ position = Vector2(146, -145)
 texture = ExtResource("2_whvxh")
 
 [node name="HealthComponent" parent="." index="6"]
-MaxHealth = 65
+MaxHealth = 75

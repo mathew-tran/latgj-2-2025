@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PrologueInfo" load_steps=3 format=3 uid="uid://cjnc83rvinnhu"]
+
+[ext_resource type="Texture2D" uid="uid://cfw6pf40nitvn" path="res://Art/Stills/E_2.png" id="1_mbfjg"]
+[ext_resource type="Script" uid="uid://b5tkg4ufqmew0" path="res://Content/PrologueInfo.gd" id="2_s43ei"]
+
+[resource]
+script = ExtResource("2_s43ei")
+ContentImage = ExtResource("1_mbfjg")
+TextContent = "You begin to wake up"
+TimeToShow = 3.0
+metadata/_custom_type_script = "uid://b5tkg4ufqmew0"

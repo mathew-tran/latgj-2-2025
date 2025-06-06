@@ -1,10 +1,10 @@
 extends Panel
 
 @export var PrologueData : Array[PrologueInfo]
-
+@export var SongToPlay = SoundMixerManager.SONG_NAME.FIGHTYOUWANT
 func _ready() -> void:
 	ShowData()
-	SoundMixer.PlaySong(SoundMixerManager.SONG_NAME.FIGHTYOUWANT)
+	SoundMixer.PlaySong(SongToPlay)
 	
 func ShowData():
 	if len(PrologueData) <= 0:

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PrologueInfo" load_steps=3 format=3 uid="uid://b3a856uqpuuho"]
+
+[ext_resource type="Texture2D" uid="uid://bfykt02kdfsyb" path="res://Art/Stills/E_3.png" id="1_gjaxs"]
+[ext_resource type="Script" uid="uid://b5tkg4ufqmew0" path="res://Content/PrologueInfo.gd" id="2_xl1a6"]
+
+[resource]
+script = ExtResource("2_xl1a6")
+ContentImage = ExtResource("1_gjaxs")
+TextContent = "You feel a sudden pain."
+TimeToShow = 3.0
+metadata/_custom_type_script = "uid://b5tkg4ufqmew0"

@@ -6,8 +6,8 @@ class_name Enemy
 
 var bIsActivated = false
 var bCanMove = true
-var MoveSpeed = 1600
-var RunSpeed = 2500
+var MoveSpeed = 3000
+var RunSpeed = 4500
 var ExtremeSpeed = 6000
 
 @export var NormalTexture : Texture2D
@@ -18,7 +18,6 @@ var ExtremeSpeed = 6000
 @export var KillXP = 500
 
 signal OnDeath
-
 func GetHealthComponent():
 	return $HealthComponent
 	

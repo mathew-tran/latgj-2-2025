@@ -12,9 +12,11 @@ func GetName():
 	
 func Setup():
 	bCanRun = true
+	Finder.GetEnemy().modulate = Color.RED
 	var tween = Finder.GetEnemy().create_tween()
 	tween.tween_property(Finder.GetEnemy(), "rotation_degrees", Finder.GetEnemy().rotation_degrees + RotateDegrees, RotateTime)
 	await tween.finished
+	Finder.GetEnemy().modulate = Color.WHITE
 	
 	bCanRun = false
 

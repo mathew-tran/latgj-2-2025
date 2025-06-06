@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://b8jot06iodv26"]
+[gd_scene load_steps=8 format=3 uid="uid://b8jot06iodv26"]
 
 [ext_resource type="Script" uid="uid://c4e1km64c6is8" path="res://Scene/Title.gd" id="1_m405t"]
 [ext_resource type="Texture2D" uid="uid://cmpgjdai2bvnx" path="res://Art/Stills/Title.png" id="2_5ktd1"]
 [ext_resource type="Texture2D" uid="uid://cmcieiifbjx3c" path="res://Art/Stills/BoxingTitleImage.png" id="3_5ktd1"]
+[ext_resource type="Script" uid="uid://don5apldoxvas" path="res://Scripts/HighScoreUI.gd" id="4_2n577"]
 
 [sub_resource type="Animation" id="Animation_5ktd1"]
 length = 0.001
@@ -170,6 +171,43 @@ Game Design, Programming, Art - Mathew Tran
 
 Made for the Literally Anything Game Jam 2 (2025)"
 horizontal_alignment = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Control"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 416.0
+offset_top = 551.0
+offset_right = 716.0
+offset_bottom = 574.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "HI-SCORE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="CanvasLayer/Control"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 416.0
+offset_top = 574.0
+offset_right = 716.0
+offset_bottom = 597.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "HI-SCORE"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_2n577")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
 libraries = {

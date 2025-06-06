@@ -113,6 +113,7 @@ shape = SubResource("CircleShape2D_b43ah")
 
 [node name="HealthComponent" type="Node" parent="."]
 script = ExtResource("4_shmu5")
+MaxHealth = 14
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.4

@@ -26,6 +26,22 @@ func Setup():
 	await get_tree().process_frame
 	OnSetup.emit()
 	
+func Recover():
+	
+	await get_tree().create_timer(.1).timeout
+	var healthToIncrease = round(MaxHealth * .30)
+	while healthToIncrease > 0:
+		CurrentHealth += 1
+		healthToIncrease -= 1
+		
+		if CurrentHealth > MaxHealth:
+			CurrentHealth = MaxHealth
+			Finder.GetGame().AddPoints(healthToIncrease * 200)
+			break
+		OnTakeDamage.emit(0)
+		await get_tree().create_timer(.1).timeout
+	
+	
 func TakeDamage(amount):
 	if CurrentState == STATE.DEAD:
 		return

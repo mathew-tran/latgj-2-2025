@@ -1,0 +1,195 @@
+[gd_scene load_steps=6 format=3 uid="uid://d3t67xtxt15lu"]
+
+[ext_resource type="Script" uid="uid://d380m6jimk7r5" path="res://Scripts/FirstTimeControls.gd" id="1_osujw"]
+[ext_resource type="Texture2D" uid="uid://b5q5bvrqk3t6j" path="res://Art/Stills/PlayerStill.png" id="2_m4mov"]
+[ext_resource type="Texture2D" uid="uid://ca5hq144t2tbc" path="res://Art/Stills/ToastyStill.png" id="3_2t1vq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mxt68"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_osujw"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[node name="Node2D" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_osujw")
+
+[node name="Panel2" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -203.0
+offset_top = 24.0
+offset_right = 203.0
+offset_bottom = 107.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 60
+text = "HOW TO PLAY"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -174.0
+offset_top = 297.0
+offset_right = 599.0
+offset_bottom = 744.0
+texture = ExtResource("2_m4mov")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 1300.0
+offset_top = 1.00002
+offset_right = 2080.0
+offset_bottom = 481.0
+rotation = 1.29184
+texture = ExtResource("3_2t1vq")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(500, 500)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -203.0
+offset_top = -197.0
+offset_right = 297.0
+offset_bottom = 303.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxFlat_mxt68")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.5
+offset_top = -69.0
+offset_right = 159.5
+offset_bottom = 69.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_osujw")
+text = "CONTROLS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 47
+theme_override_constants/v_separation = 20
+columns = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "LEFT MOUSE BUTTON"
+
+[node name="Label2" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Punch Left (L)"
+
+[node name="Label3" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "RIGHT MOUSE BUTTON"
+
+[node name="Label4" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Punch Right (R)"
+
+[node name="Label5" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "SHIFT"
+
+[node name="Label6" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Block (B)"
+
+[node name="Label7" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "SPACE"
+
+[node name="Label8" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Dash (D)"
+
+[node name="Label17" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Move Mouse"
+
+[node name="Label18" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Aim"
+
+[node name="Label9" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "W"
+
+[node name="Label10" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Move Up"
+
+[node name="Label11" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "A"
+
+[node name="Label12" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Move Left"
+
+[node name="Label13" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "S"
+
+[node name="Label14" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Move Down"
+
+[node name="Label15" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "D"
+
+[node name="Label16" type="Label" parent="Panel/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Move Right"
+
+[node name="Label2" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Try using L-L-R for a strong move!"
+horizontal_alignment = 1
+
+[node name="Label19" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 30)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -287.0
+offset_top = -78.0
+offset_right = 288.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 40
+text = "<PRESS SPACE TO CONTINUE>"
+horizontal_alignment = 1
+vertical_alignment = 1

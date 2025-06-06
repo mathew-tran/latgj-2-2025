@@ -13,7 +13,9 @@ func GetName():
 func Setup():
 	bCanRun = true
 	if bEnable:
+		Finder.GetEnemy().modulate = Color.RED
 		await Finder.GetEnemy().ActivateSpikes()
+		Finder.GetEnemy().modulate = Color.WHITE
 	else:
 		await Finder.GetEnemy().DeactivateSpikes()
 	bCanRun = false

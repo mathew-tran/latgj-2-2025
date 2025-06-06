@@ -19,6 +19,11 @@ config/icon="res://icon.svg"
 
 Finder="*res://Scripts/Autoload/Finder.gd"
 SoundMixer="*res://Prefabs/Autoload/SoundMixer.tscn"
+Persist="*res://Scripts/Autoload/Persist.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [input]
 
